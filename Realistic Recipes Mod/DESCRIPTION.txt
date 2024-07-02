@@ -1,0 +1,83 @@
+﻿DESCRIPTION
+
+
+[EN]
+
+---REALISTIC RECIPES---
+
+More complex recipes
+  For players who want to add a little extra difficulty to their game.
+    - This game mode makes vanilla recipes a little more demanding by increasing the quantity and diversity of the resources needed
+       to craft them, or even completely changing certain recipes for the sake of realism.
+
+Realistic recipes
+  For those who want to experiment with a more tactical approach to the trade-off between resource gathering
+  and time spent on an objective. /!\Not recommended for beginners or as a first playthrough/!\
+    - The "realistic" factor is based on or inspired by manufacturing recipes from real-life counterparts
+      (if a reference is available), or is the direct product from the imagination of yours truly ;P
+      Some recipes from real-life examples have been adapted due to the lack of specific resources and materials in the game.
+      The source of the recipes used as examples for crafts can be found as hyperlinks in the 'Add-ons' section.
+
+Faithful recipes
+Adds new ressources and crafting recipies necessary to make recipies even more realistic.
+
+Hardcore realism
+  Turns the game into a long gathering quest and will test your patience and determination.
+    - Adds new machinery, new items, new craftable ressources, all with highly demanding recipies based off real life production counterparts.
+
+
+***peut-être pour plus tard***
+
+Hardcore realism +
+  Adds every single real-life needed ressources for crafting alongside all needed machinery, items and equipements.
+    - You won’t survive this game mode without killing your brain.
+
+
+[FR]
+
+---REALISTIC RECIPES---
+
+Recettes plus complexes (Difficulté: ça casse pas trois pattes à un canard) [v.1.0.0]
+
+  Pour les joueurs qui souhaitent ajouter un poil de difficulté supplémentaire à leur jeu.
+    - Ce mode de jeu rend les recettes vanilla un peu plus exigeantes en augmentant la quantité
+    et la diversité des ressources nécessaires à leur réalisation, voire en changeant complètement
+    certaines recettes dans un souci du détail.
+
+
+Recettes réalistes (Difficulté: allez, au boulot) [v.1.0.0]
+
+  Pour ceux qui désirent expérimenter une approche plus tactique quant au choix entre la récupération
+  des ressources et le temps à consacrer à un objectif.
+  /!\ Non recommandé aux joueurs débutants ou en tant que première partie /!\
+    - Le facteur "réaliste" est fondé sur ou inspiré par des recettes de fabrication provenant
+    de contreparties de la vie réelle* (si une référence est disponible), ou bien est le fruit direct
+    de l'imagination de votre humble et dévoué serviteur ;P
+    Certaines recettes tirées d'exemples réels ont été adaptées en raison de l'absence de ressources et
+    de matériaux spécifiques dans le jeu.
+      
+  *La source des recettes prise comme exemple pour les crafts sont trouvables sous forme d'hyperliens dans l'index 'Ajouts'
+
+
+Recettes fidèles (Difficulté: tu vas douiller mon poto) [v.1.1.0]
+
+  Destiné aux joueurs chevronés voulant découvrir une survie à l'allure réaliste et aux contraintes nombreuses.
+    - Ajout de nouvelles ressources uniques (récupérables seulement à certains endroits de la carte) qui pourront dorénavant
+    être exigées dans la confection de précédentes recettes de fabrication moddées ainsi que dans de nouvelles exclusives.
+    Ces items moddés seront par conséquent demandés dans certaines recettes anciennement vanilla.
+
+
+Réalisme extrême (Difficulté: "je peux pas j'ai aqua-poney" marchera pas ici) [v.1.2.0]
+
+  Transforme le jeu en une longue quête de récolte de ressources et mettra définitivement votre patience et
+  votre détermination à rude épreuve.
+    - Ajout de machines, outils, objets et matériaux, tous comprenant des recettes extrêmement coûteuses
+    et toujours basées sur des méthodes de manufacturation réelles.
+
+
+***peut-être pour plus tard***
+
+Réalisme extrême+ (Difficulté: t'es vraiment taré... ou t'es chômeur) [v.1.?.0]
+
+  Adds every single real-life needed ressources for crafting alongside all needed machinery, items and equipements.
+    - You won’t survive this game mode without killing your brain.

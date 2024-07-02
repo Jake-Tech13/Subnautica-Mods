@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|c:\\dev\\subnautica_mods_projects\\realistic recipes mod\\rr_infos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|solutionrelative:rr_infos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|c:\\dev\\subnautica_mods_projects\\realistic recipes mod\\items\\minerals\\coal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|solutionrelative:items\\minerals\\coal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|c:\\dev\\subnautica_mods_projects\\realistic recipes mod\\items\\equipment\\yeetknifeprefab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|solutionrelative:items\\equipment\\yeetknifeprefab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|c:\\dev\\subnautica_mods_projects\\realistic recipes mod\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Infos.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RR_Infos.csproj",
+              "DocumentMoniker": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\RR_Infos.csproj",
+              "RelativeDocumentMoniker": "RR_Infos.csproj",
+              "ToolTip": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\RR_Infos.csproj",
+              "RelativeToolTip": "RR_Infos.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-20T15:35:03.977Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Coal.cs",
+              "DocumentMoniker": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\Items\\Minerals\\Coal.cs",
+              "RelativeDocumentMoniker": "Items\\Minerals\\Coal.cs",
+              "ToolTip": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\Items\\Minerals\\Coal.cs",
+              "RelativeToolTip": "Items\\Minerals\\Coal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:34:52.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "YeetKnifePrefab.cs",
+              "DocumentMoniker": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\Items\\Equipment\\YeetKnifePrefab.cs",
+              "RelativeDocumentMoniker": "Items\\Equipment\\YeetKnifePrefab.cs",
+              "ToolTip": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\Items\\Equipment\\YeetKnifePrefab.cs",
+              "RelativeToolTip": "Items\\Equipment\\YeetKnifePrefab.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:34:51.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\Plugin.cs",
+              "RelativeDocumentMoniker": "Plugin.cs",
+              "ToolTip": "C:\\Dev\\subnautica_mods_projects\\Realistic Recipes Mod\\Plugin.cs",
+              "RelativeToolTip": "Plugin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:34:44.433Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

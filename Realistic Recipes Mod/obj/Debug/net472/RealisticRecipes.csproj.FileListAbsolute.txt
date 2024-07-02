@@ -1,0 +1,6 @@
+C:\Dev\subnautica_mods_projects\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipes.csproj.AssemblyReference.cache
+C:\Dev\subnautica_mods_projects\Realistic Recipes Mod\obj\Debug\net472\PluginInfo.cs
+C:\Dev\subnautica_mods_projects\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\subnautica_mods_projects\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipes.AssemblyInfoInputs.cache
+C:\Dev\subnautica_mods_projects\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipes.AssemblyInfo.cs
+C:\Dev\subnautica_mods_projects\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipes.csproj.CoreCompileInputs.cache
