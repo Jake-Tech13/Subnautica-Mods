@@ -17,8 +17,8 @@ namespace RRM.LoggerLines
         public static string message_FR_5 = "[FR] Modded Equipments loaded successfully!";
         public static string message_XR_1 = "[XR] Modded Recipes loaded successfully!";
         public static string message_XR_2 = "[XR] Modded Resources loaded successfully!";
-        public static string message_XR_3 = "[FR] Modded Materials loaded successfully!";
-        public static string message_XR_4 = "[FR] Modded Tools loaded successfully!";
-        public static string message_XR_5 = "[FR] Modded Equipments loaded successfully!";
+        public static string message_XR_3 = "[XR] Modded Materials loaded successfully!";
+        public static string message_XR_4 = "[XR] Modded Tools loaded successfully!";
+        public static string message_XR_5 = "[XR] Modded Equipments loaded successfully!";
     }
 }

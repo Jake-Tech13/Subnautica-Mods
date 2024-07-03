@@ -13,6 +13,6 @@ namespace RRM.MainMenu_GUI
 {
     public class GUI_GameModeSelector
     {
-        public static int gm = 1;
+        public static int gm = 4;
     }
 }
