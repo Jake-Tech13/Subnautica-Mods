@@ -10,6 +10,7 @@ namespace RRM.RealisticRecipes
 {
     public static class RealisticRecipesTable
     {
+        //regroup all functions together so they are called at the same time by 'RegisterAllRecipes()' inside the file 'Plugin.cs'
         public static bool RegisterAllRecipes()
         {
             BasicMaterialsRecipes_RR();
@@ -29,6 +30,7 @@ namespace RRM.RealisticRecipes
             return false;
         }
 
+        //items are listed in the same order as they appear in their in-game respective fabricator UI
         public static void BasicMaterialsRecipes_RR()
         {
             //bleach recipe
@@ -101,7 +103,6 @@ namespace RRM.RealisticRecipes
                 LinkedItems = Enumerable.Repeat(TechType.Titanium, 6).ToList()
             };
             CraftDataHandler.SetRecipeData(TechType.Titanium, titaniumRecipe);
-            Plugin.Logger.LogInfo("BasicMaterialsRecipes_RR loaded successfully!");
         }
 
         public static void AdvancedMaterialsRecipes_RR()
@@ -147,8 +148,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Benzene),
                 new CraftData.Ingredient(TechType.FiberMesh));
             CraftDataHandler.SetRecipeData(TechType.AramidFibers, syntheticFibersRecipe);
-
-            Plugin.Logger.LogInfo("AdvancedMaterialsRecipes_RR loaded successfully!");
         }
 
         public static void ElectronicsRecipes_RR()
@@ -225,8 +224,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Copper),
                 new CraftData.Ingredient(TechType.Titanium));
             CraftDataHandler.SetRecipeData(TechType.WiringKit, wiringKitRecipe);
-
-            Plugin.Logger.LogInfo("ElectronicsRecipes_RR loaded successfully!");
         }
 
         public static void DeployablesRecipes_RR()
@@ -290,8 +287,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Titanium, 4),
                 new CraftData.Ingredient(TechType.Silicone, 2));
             CraftDataHandler.SetRecipeData(TechType.SmallStorage, waterproofLockerRecipe);
-
-            Plugin.Logger.LogInfo("DeployablesRecipes_RR loaded successfully!");
         }
 
         public static void EquipmentRecipes_RR()
@@ -458,8 +453,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Aerogel),
                 new CraftData.Ingredient(TechType.CopperWire));
             CraftDataHandler.SetRecipeData(TechType.WaterFiltrationSuit, waterFiltrationSuitRecipe);
-
-            Plugin.Logger.LogInfo("EquipmentRecipes_RR loaded successfully!");
         }
 
         public static void ToolsRecipes_RR()
@@ -563,8 +556,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Knife),
                 new CraftData.Ingredient(TechType.Battery));
             CraftDataHandler.SetRecipeData(TechType.HeatBlade, thermobladeRecipe);
-
-            Plugin.Logger.LogInfo("ToolsRecipes_RR loaded successfully!");
         }
 
         public static void VehiclesRecipes_RR()
@@ -633,8 +624,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.EnameledGlass),
                 new CraftData.Ingredient(TechType.ComputerChip));
             CraftDataHandler.SetRecipeData(TechType.RocketStage3, rocketCockpitRecipe);
-
-            Plugin.Logger.LogInfo("VehiclesRecipes_RR loaded successfully!");
         }
 
         public static void UpgradeModulesRecipes_RR()
@@ -841,8 +830,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Lithium),
                 new CraftData.Ingredient(TechType.Aerogel));
             CraftDataHandler.SetRecipeData(TechType.SeamothTorpedoModule, torpedoSystemRecipe);
-
-            Plugin.Logger.LogInfo("VehiclesUpgradesRecipes_RR loaded successfully!");
         }
 
         public static void BasePiecesRecipes_RR()
@@ -949,8 +936,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Glass, 2));
             CraftDataHandler.SetRecipeData(TechType.BaseWindow, windowRecipe);
 
-            Plugin.Logger.LogInfo("BasePiecesRecipes_RR loaded successfully!");
-
             //base reinforcement recipe
             RecipeData BaseReinforcementRecipe = new(
                 new CraftData.Ingredient(TechType.Titanium, 3),
@@ -1007,8 +992,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Titanium, 2),
                 new CraftData.Ingredient(TechType.Copper));
             CraftDataHandler.SetRecipeData(TechType.BasePipeConnector, basePipeConnectorRecipe);
-
-            Plugin.Logger.LogInfo("BaseExteriorModulesRecipes_RR loaded successfully!");
         }
 
         public static void BaseInteriorPiecesRecipes_RR()
@@ -1074,8 +1057,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Titanium, 2),
                 new CraftData.Ingredient(TechType.Quartz));
             CraftDataHandler.SetRecipeData(TechType.BasePartitionDoor, largeRoomPatitionDoorRecipe);
-
-            Plugin.Logger.LogInfo("BaseInteriorPiecesRecipes_RR loaded successfully!");
         }
 
         public static void BaseInteriorModulesRecipes_RR()
@@ -1176,8 +1157,6 @@ namespace RRM.RealisticRecipes
                 new CraftData.Ingredient(TechType.Titanium),
                 new CraftData.Ingredient(TechType.PurpleRattle));
             CraftDataHandler.SetRecipeData(TechType.PlanterShelf, plantShelfRecipe);
-
-            Plugin.Logger.LogInfo("BaseInteriorModulesRecipes_RR loaded successfully!");
         }
 
         public static void BaseDecorationsRecipes_RR()
@@ -1293,8 +1272,6 @@ namespace RRM.RealisticRecipes
             RecipeData wallShelvesRecipe = new(
                 new CraftData.Ingredient(TechType.Titanium, 4));
             CraftDataHandler.SetRecipeData(TechType.WallShelves, wallShelvesRecipe);
-
-            Plugin.Logger.LogInfo("BaseDecorationsRecipes_RR loaded successfully!");
         }
     }
 }

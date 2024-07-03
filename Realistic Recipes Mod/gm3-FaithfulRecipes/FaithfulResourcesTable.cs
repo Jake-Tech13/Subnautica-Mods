@@ -8,20 +8,16 @@ using UnityEngine;
 
 namespace RRM.FaithfulRecipes
 {
-    public static class FaithfulResourcesTable
+    public class FaithfulResourcesTable
     {
         public static void RegisterAllResources()
         {
             var types = Assembly.GetExecutingAssembly().GetTypes()
-                                .Where(t => t.Namespace == "RRM.RealisticRecipes.Items.Resources" && t.IsClass);
-
+                                .Where(t => t.Namespace == "RRM.gm3-FaithfulRecipes.Items.Resources" && t.IsClass);
             foreach (var type in types)
             {
                 var methodInfo = type.GetMethod("Register", BindingFlags.Public | BindingFlags.Static);
-                if (methodInfo != null)
-                {
-                    methodInfo.Invoke(null, null);
-                }
+                methodInfo?.Invoke(null, null);
             }
         }
     }
