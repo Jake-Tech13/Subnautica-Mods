@@ -37,7 +37,7 @@ namespace RRM
         // declares an integer that is used to select a specific gamemode (as shown below)
         private readonly int gamemode = GUI_GameModeSelector.gm;
 
-        // this function groups together custom prefabs, function, classes,... so they can all be called inside 'Awake'
+        // this function groups together custom prefabs, function, classes,... so they can all be called inside 'Awake()'
         public void InitializePrefabs()
         {
             // [not fully implemented yet]
