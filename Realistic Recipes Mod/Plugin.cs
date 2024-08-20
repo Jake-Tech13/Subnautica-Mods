@@ -7,15 +7,23 @@ using System.Linq;
 using System.Collections.Generic;
 using RRM.MainMenu_GUI;
 using RRM.LoggerLines;
-
+using UnityEngine;
+using Nautilus.Json.Converters;
+using Nautilus.Utility;
+using Newtonsoft.Json;
+using System.Collections;
+using System.IO;
 
 namespace RRM
 {
     [BepInDependency("com.snmodding.nautilus")]
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-
     public class Plugin : BaseUnityPlugin
     {
+        private const string PLUGIN_GUID = "Jake_Tonic.RealisticRecipesMod";
+        private const string PLUGIN_NAME = "Realistic Recipes Mod";
+        private const string PLUGIN_VERSION = "1.0.0";
+
         public new static ManualLogSource Logger { get; private set; }
         private static Assembly Assembly { get; } = Assembly.GetExecutingAssembly();
 
@@ -35,14 +43,14 @@ namespace RRM
         
         // [temporary]
         // declares an integer that is used to select a specific gamemode (as shown below)
-        private readonly int gamemode = GUI_GameModeSelector.gm;
+        private readonly int gamemode = GUI_DifficultyPanel.gameModeIndex;
 
         // this function groups together custom prefabs, function, classes,... so they can all be called inside 'Awake()'
         public void InitializePrefabs()
         {
             // [not fully implemented yet]
             // if selected gamemode value ('gm') equals 'gamemode' value, ignores the rest of the statement and executes only its code...
-            if (gamemode == 1)
+            if (gamemode == 0)
             {
                 Logger.LogInfo(LogInfo_Lines.info_CR);
 
@@ -51,7 +59,7 @@ namespace RRM
             }
 
             // ..else, checks all of the following conditions until the values matches...
-            else if (gamemode == 2)
+            else if (gamemode == 1)
             {
                 Logger.LogInfo(LogInfo_Lines.info_RR);
                 
@@ -69,7 +77,7 @@ namespace RRM
                 }*/
             }
 
-            else if (gamemode == 3)
+            else if (gamemode == 2)
             {
                 Logger.LogInfo(LogInfo_Lines.info_FR);
 
@@ -85,7 +93,7 @@ namespace RRM
                 Logger.LogMessage(LogMessage_Lines.message_FR_5);
             }
 
-            else if (gamemode == 4)
+            else if (gamemode == 3)
             {
                 Logger.LogInfo(LogInfo_Lines.info_XR);
 
@@ -101,7 +109,7 @@ namespace RRM
                 Logger.LogMessage(LogMessage_Lines.message_XR_5);
             }
 
-            else if (gamemode == 0)
+            else if (gamemode == 4)
             {
                 Logger.LogWarning(LogWarning_Lines.warning_Vanilla);
             }
