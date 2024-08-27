@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\mainmenu_gui\\gui_gamemodeselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:mainmenu_gui\\gui_gamemodeselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\gm1-complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:gm1-complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:savesystem\\saveloadingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\mainmenu_gui\\gui_difficultyselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:mainmenu_gui\\gui_difficultyselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\gm2-realisticrecipes\\realisticrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:gm2-realisticrecipes\\realisticrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\gm1-complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:gm1-complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\dev\\gitrepository\\subnautica-mods\\realistic recipes mod\\gm3-faithfulrecipes\\faithfulrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -59,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Plugin.cs",
               "DocumentMoniker": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\Plugin.cs",
               "RelativeDocumentMoniker": "Plugin.cs",
               "ToolTip": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\Plugin.cs",
               "RelativeToolTip": "Plugin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDQAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T18:03:40.701Z",
               "IsPinned": true,
@@ -73,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SaveLoadingSystem.cs",
               "DocumentMoniker": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\SaveSystem\\SaveLoadingSystem.cs",
               "RelativeDocumentMoniker": "SaveSystem\\SaveLoadingSystem.cs",
               "ToolTip": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\SaveSystem\\SaveLoadingSystem.cs",
               "RelativeToolTip": "SaveSystem\\SaveLoadingSystem.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAIwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T17:24:04.419Z",
               "EditorCaption": ""
@@ -90,33 +90,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GUI_DifficultySelector.cs",
-              "DocumentMoniker": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\MainMenu_GUI\\GUI_DifficultySelector.cs",
-              "RelativeDocumentMoniker": "MainMenu_GUI\\GUI_DifficultySelector.cs",
-              "ToolTip": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\MainMenu_GUI\\GUI_DifficultySelector.cs",
-              "RelativeToolTip": "MainMenu_GUI\\GUI_DifficultySelector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GUI_GameModeSelector.cs",
+              "DocumentMoniker": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\MainMenu_GUI\\GUI_GameModeSelector.cs",
+              "RelativeDocumentMoniker": "MainMenu_GUI\\GUI_GameModeSelector.cs",
+              "ToolTip": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\MainMenu_GUI\\GUI_GameModeSelector.cs",
+              "RelativeToolTip": "MainMenu_GUI\\GUI_GameModeSelector.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwFsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T13:09:58.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RealisticRecipesTable.cs",
               "DocumentMoniker": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\gm2-RealisticRecipes\\RealisticRecipesTable.cs",
               "RelativeDocumentMoniker": "gm2-RealisticRecipes\\RealisticRecipesTable.cs",
               "ToolTip": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\gm2-RealisticRecipes\\RealisticRecipesTable.cs",
               "RelativeToolTip": "gm2-RealisticRecipes\\RealisticRecipesTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T23:00:23.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T23:00:23.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ComplexRecipesTable.cs",
               "DocumentMoniker": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\gm1-ComplexRecipes\\ComplexRecipesTable.cs",
               "RelativeDocumentMoniker": "gm1-ComplexRecipes\\ComplexRecipesTable.cs",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealisticRecipesMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d67d690f2a760900f386d5928d7a6399abd7c5d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f89af7706b0d4a31787f1bcf48d9113d2843606")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealisticRecipesMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealisticRecipesMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
