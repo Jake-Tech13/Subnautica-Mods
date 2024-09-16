@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj": {}
+    "C:\\Dev\\GitHub_depository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj": {}
   },
   "projects": {
-    "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj": {
+    "C:\\Dev\\GitHub_depository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
+        "projectUniqueName": "C:\\Dev\\GitHub_depository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
         "projectName": "RealisticRecipesMod",
-        "projectPath": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\GitRepository\\Subnautica-Mods\\Realistic Recipes Mod\\obj\\",
+        "projectPath": "C:\\Dev\\GitHub_depository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
+        "packagesPath": "C:\\Users\\Dufourg Ilan\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\GitHub_depository\\Subnautica-Mods\\Realistic Recipes Mod\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dufourg Ilan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

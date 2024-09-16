@@ -13,7 +13,20 @@ using System.Collections;
 using System.IO;
 using RRM.MainMenu_GUI;
 using RRM.LoggerLines;
-using RRM.SaveSystem;
+using RRM.SaveFileManager;
+using static RRM.SaveFileManager.SFM;
+using Nautilus.Handlers;
+using RRM.RealisticRecipes;
+using Nautilus.Commands;
+using Nautilus.Json;
+using Nautilus.Json.Attributes;
+using Nautilus.Options;
+using Nautilus.Options.Attributes;
+using static OVRHaptics;
+using static FlexibleGridLayout;
+using RRM.ComplexRecipes;
+using RRM.FaithfulRecipes;
+using RRM.XtremeRLRecipes;
 
 namespace RRM
 {
@@ -34,31 +47,9 @@ namespace RRM
             // set project-scoped logger instance
             Logger = base.Logger;
 
-            // initialize custom prefabs
-            InitializePrefabs();
-
             // register harmony patches, if there are any
             Harmony.CreateAndPatchAll(Assembly, $"{PluginInfo.PLUGIN_GUID}");
-            Logger.LogInfo(LogInfo_Lines.info_PluginGUID);
-        }
-        
-        // [temporary]
-        // declares an integer that is used to select a specific gamemode (as shown below)
-        //private readonly int gamemode = GUI_DifficultyPanel.gameModeIndex;
-
-        // this function groups together custom prefabs, function, classes,... so they can all be called inside 'Awake()'
-        public void InitializePrefabs()
-        {
-            if (GUI_DifficultyPanel.gameModeIndex ==)
-            {
-
-            }
-            else if ()
-            {
-
-            }
-            SaveLoadingSystem.LoadingNewGame();
-            SaveLoadingSystem.LoadingSavedGame();
+            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
         }
     }
 }

@@ -35,8 +35,10 @@ namespace RRM.RealisticRecipes
         {
             // bleach recipe
             RecipeData bleachRecipe = new(
-                new CraftData.Ingredient(TechType.Salt),
-                new CraftData.Ingredient(TechType.CoralChunk));
+                //new CraftData.Ingredient(TechType.Salt),
+                //new CraftData.Ingredient(TechType.CoralChunk),
+                new CraftData.Ingredient(TechType.UraniniteCrystal, 20),
+                new CraftData.Ingredient(TechType.Diamond, 10));
             CraftDataHandler.SetRecipeData(TechType.Bleach, bleachRecipe);
 
             // enameled glass recipe

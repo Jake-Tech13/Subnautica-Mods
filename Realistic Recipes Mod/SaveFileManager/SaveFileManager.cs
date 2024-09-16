@@ -4,80 +4,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Diagnostics.Eventing.Reader;
+using Nautilus.Json;
+
 using RRM.LoggerLines;
 using RRM.MainMenu_GUI;
+using RRM.ComplexRecipes;
+using RRM.RealisticRecipes;
+using RRM.FaithfulRecipes;
+using RRM.XtremeRLRecipes;
+using RRM;
 
-namespace RRM.SaveSystem
+
+namespace RRM.SaveFileManager
 {
-    internal class SaveLoadingSystem
+    internal class SFM
     {
-        public static void LoadingSystem()
+        public static void LoadModdedFiles()
         {
             // [not fully implemented yet]
-            // if selected gamemode value ('gm') equals 'gamemode' value, ignores the rest of the statement and executes only its code...
-            if (GUI_DifficultyPanel.gameModeIndex == 0)
+            // if selected gamemode value 'difficultyIndex' returns 'x' OR if ###, loads corresponding components
+            if (GUI_DifficultyPanel.difficultyIndex == 0)
             {
                 Plugin.Logger.LogInfo(LogInfo_Lines.info_CR);
 
-                ComplexRecipes.ComplexRecipesTable.RegisterAllRecipes();
+                ComplexRecipesTable.RegisterAllRecipes();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_CR_1);
             }
-
-            // ..else, checks all of the following conditions until the values matches...
-            else if (GUI_DifficultyPanel.gameModeIndex == 1)
+            else if (GUI_DifficultyPanel.difficultyIndex == 1)
             {
                 Plugin.Logger.LogInfo(LogInfo_Lines.info_RR);
 
-                RealisticRecipes.RealisticRecipesTable.RegisterAllRecipes();
+                RealisticRecipesTable.RegisterAllRecipes();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_RR_1);
             }
 
-            else if (GUI_DifficultyPanel.gameModeIndex == 2)
+            else if (GUI_DifficultyPanel.difficultyIndex == 2)
             {
                 Plugin.Logger.LogInfo(LogInfo_Lines.info_FR);
 
-                FaithfulRecipes.FaithfulRecipesTable.RegisterAllRecipes();
+                FaithfulRecipesTable.RegisterAllRecipes();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_FR_1);
-                FaithfulRecipes.FaithfulResourcesTable.RegisterAllResources();
+                FaithfulResourcesTable.RegisterAllResources();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_FR_2);
-                FaithfulRecipes.FaithfulMaterialsTable.RegisterAllMaterials();
+                FaithfulMaterialsTable.RegisterAllMaterials();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_FR_3);
-                FaithfulRecipes.FaithfulToolsTable.RegisterAllTools();
+                FaithfulToolsTable.RegisterAllTools();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_FR_4);
-                FaithfulRecipes.FaithfulEquipmentsTable.RegisterAllEquipments();
+                FaithfulEquipmentsTable.RegisterAllEquipments();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_FR_5);
             }
 
-            else if (GUI_DifficultyPanel.gameModeIndex == 3)
+            else if (GUI_DifficultyPanel.difficultyIndex == 3)
             {
                 Plugin.Logger.LogInfo(LogInfo_Lines.info_XR);
 
-                XtremeRLRecipes.XtremeRLRecipesTable.RegisterAllRecipes();
+                XtremeRLRecipesTable.RegisterAllRecipes();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_XR_1);
-                XtremeRLRecipes.XtremeRLResourcesTable.RegisterAllResources();
+                XtremeRLResourcesTable.RegisterAllResources();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_XR_2);
-                XtremeRLRecipes.XtremeRLMaterialsTable.RegisterAllMaterials();
+                XtremeRLMaterialsTable.RegisterAllMaterials();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_XR_3);
-                XtremeRLRecipes.XtremeRLToolsTable.RegisterAllTools();
+                XtremeRLToolsTable.RegisterAllTools();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_XR_4);
-                XtremeRLRecipes.XtremeRLEquipmentsTable.RegisterAllEquipments();
+                XtremeRLEquipmentsTable.RegisterAllEquipments();
                 Plugin.Logger.LogMessage(LogMessage_Lines.message_XR_5);
             }
 
-            else if (GUI_DifficultyPanel.gameModeIndex == 4)
+            else if (GUI_DifficultyPanel.difficultyIndex == 4)
             {
                 Plugin.Logger.LogWarning(LogWarning_Lines.warning_Vanilla);
             }
 
-            //..and if the values never matches, prints an error in logs
             else
             {
                 Plugin.Logger.LogError(LogError_Lines.error_GM);
             }
         }
-        public static void SaveSystem()
-        {
 
+        public class SavingSystem : SaveDataCache
+        {
+            public string DifficultyName { get; set; }
         }
     }
 }
