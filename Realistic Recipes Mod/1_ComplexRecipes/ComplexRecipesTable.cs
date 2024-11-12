@@ -10,8 +10,8 @@ namespace RRM.ComplexRecipes
 {
     public static class ComplexRecipesTable
     {
-        // regroup all functions so they are called one after another by 'RegisterAllRecipes()' and then executed together inside the file 'Plugin.cs'
-        public static void RegisterAllRecipes()
+        // regroup all methods so they are called one after another by 'RegisterAll()' and then executed together inside the file 'Plugin.cs'
+        public static void RegisterAll()
         {
             BasicMaterialsRecipes_CR();
             AdvancedMaterialsRecipes_CR();
@@ -34,7 +34,8 @@ namespace RRM.ComplexRecipes
             // bleach recipe
             RecipeData bleachRecipe = new(
                 new CraftData.Ingredient(TechType.Salt),
-                new CraftData.Ingredient(TechType.CoralChunk));
+                new CraftData.Ingredient(TechType.CoralChunk),
+                new CraftData.Ingredient(TechType.PurpleBrainCoralPiece));
             CraftDataHandler.SetRecipeData(TechType.Bleach, bleachRecipe);
 
             // enameled glass recipe
@@ -68,9 +69,8 @@ namespace RRM.ComplexRecipes
             // plasteel ingot recipe
             RecipeData plasteelIngotRecipe = new(
                 new CraftData.Ingredient(TechType.TitaniumIngot),
-                new CraftData.Ingredient(TechType.Lithium, 3));
-                //new CraftData.Ingredient(TechType.Lithium, 2),
-                //new CraftData.Ingredient(TechType.Lead, 2));
+                new CraftData.Ingredient(TechType.Lithium, 1),
+                new CraftData.Ingredient(TechType.Lead, 2));
             CraftDataHandler.SetRecipeData(TechType.PlasteelIngot, plasteelIngotRecipe);
 
             // silicone rubber recipe
@@ -79,7 +79,8 @@ namespace RRM.ComplexRecipes
                 craftAmount = 0,
                 Ingredients =
                 {
-                    new CraftData.Ingredient(TechType.CreepvineSeedCluster)
+                    new CraftData.Ingredient(TechType.CreepvineSeedCluster),
+                    new CraftData.Ingredient(TechType.Quartz)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Silicone, 2).ToList()
             };
@@ -98,8 +99,19 @@ namespace RRM.ComplexRecipes
                 {
                     new CraftData.Ingredient(TechType.ScrapMetal)
                 },
-                LinkedItems = Enumerable.Repeat(TechType.Titanium, 6).ToList()
+                LinkedItems = new List<TechType>()
+                {
+                    TechType.CopperWire
+                }
             };
+            for (int i = 0; i < 5; i++)
+            {
+                titaniumRecipe.LinkedItems.Add(TechType.Titanium);
+            }
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    titaniumRecipe.LinkedItems.Add(TechType.CopperWire);
+            //}
             CraftDataHandler.SetRecipeData(TechType.Titanium, titaniumRecipe);
         }
 
@@ -108,13 +120,14 @@ namespace RRM.ComplexRecipes
             // aerogel recipe
             RecipeData aerogelRecipe = new(
                 new CraftData.Ingredient(TechType.JellyPlant),
+                new CraftData.Ingredient(TechType.Bladderfish),
                 new CraftData.Ingredient(TechType.AluminumOxide));
             CraftDataHandler.SetRecipeData(TechType.Aerogel, aerogelRecipe);
 
             // benzene recipe
             RecipeData benzeneRecipe = new(
-                new CraftData.Ingredient(TechType.BloodOil, 3),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.BloodOil, 2),
+                new CraftData.Ingredient(TechType.Quartz));
             CraftDataHandler.SetRecipeData(TechType.Benzene, benzeneRecipe);
 
             // hatching enzyme recipe
@@ -124,21 +137,21 @@ namespace RRM.ComplexRecipes
                 new CraftData.Ingredient(TechType.RedGreenTentacleSeed),
                 new CraftData.Ingredient(TechType.SeaCrownSeed),
                 new CraftData.Ingredient(TechType.KooshChunk),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.Quartz));
             CraftDataHandler.SetRecipeData(TechType.HatchingEnzymes, hatchingEnzymesRecipe);
 
             // hydrocloric acid recipe
             RecipeData hydrocloricAcidRecipe = new(
                 new CraftData.Ingredient(TechType.WhiteMushroom, 3),
                 new CraftData.Ingredient(TechType.Salt),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.Quartz));
             CraftDataHandler.SetRecipeData(TechType.HydrochloricAcid, hydrocloricAcidRecipe);
 
             // polyaniline recipe
             RecipeData polyanilineRecipe = new(
-                new CraftData.Ingredient(TechType.Gold),
+                new CraftData.Ingredient(TechType.Benzene),
                 new CraftData.Ingredient(TechType.HydrochloricAcid),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.Quartz));
             CraftDataHandler.SetRecipeData(TechType.Polyaniline, polyanilineRecipe);
 
             // synthetic fibers recipe

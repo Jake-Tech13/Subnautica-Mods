@@ -7,30 +7,30 @@ using Nautilus.Handlers;
 using Nautilus.Assets;
 
 
-namespace RRM.XtremeRLRecipes
+namespace RRM.VanillaRecipes
 {
-    public class XtremeRLRecipesTable
+    public class VanillaRecipesTable
     {
-        // regroup all functions together so they are called at the same time by 'RegisterAllRecipes()' inside the file 'Plugin.cs'
-        public static void RegisterAllRecipes()
+        // regroup all methods together so they are called at the same time by 'RegisterAll()' inside the file 'Plugin.cs'
+        public static void RegisterAll()
         {
-            BasicMaterialsRecipes_XR();
-            AdvancedMaterialsRecipes_XR();
-            ElectronicsRecipes_XR();
-            DeployablesRecipes_XR();
-            EquipmentRecipes_XR();
-            ToolsRecipes_XR();
-            VehiclesRecipes_XR();
-            UpgradeModulesRecipes_XR();
-            BasePiecesRecipes_XR();
-            BaseExteriorModulesRecipes_XR();
-            BaseInteriorPiecesRecipes_XR();
-            BaseInteriorModulesRecipes_XR();
-            BaseDecorationsRecipes_XR();
+            BasicMaterialsRecipes_VR();
+            AdvancedMaterialsRecipes_VR();
+            ElectronicsRecipes_VR();
+            DeployablesRecipes_VR();
+            EquipmentRecipes_VR();
+            ToolsRecipes_VR();
+            VehiclesRecipes_VR();
+            UpgradeModulesRecipes_VR();
+            BasePiecesRecipes_VR();
+            BaseExteriorModulesRecipes_VR();
+            BaseInteriorPiecesRecipes_VR();
+            BaseInteriorModulesRecipes_VR();
+            BaseDecorationsRecipes_VR();
         }
 
         // items are listed in the same order as they appear in their in-game respective fabricator UI
-        public static void BasicMaterialsRecipes_XR()
+        public static void BasicMaterialsRecipes_VR()
         {
             // bleach recipe
             RecipeData bleachRecipe = new(
@@ -69,9 +69,7 @@ namespace RRM.XtremeRLRecipes
             // plasteel ingot recipe
             RecipeData plasteelIngotRecipe = new(
                 new CraftData.Ingredient(TechType.TitaniumIngot),
-                new CraftData.Ingredient(TechType.Lithium, 3));
-                //new CraftData.Ingredient(TechType.Lithium, 2),
-                //new CraftData.Ingredient(TechType.Lead, 2));
+                new CraftData.Ingredient(TechType.Lithium, 2));
             CraftDataHandler.SetRecipeData(TechType.PlasteelIngot, plasteelIngotRecipe);
 
             // silicone rubber recipe
@@ -88,7 +86,7 @@ namespace RRM.XtremeRLRecipes
 
             // titanium ingot recipe
             RecipeData titaniumIngotRecipe = new(
-                new CraftData.Ingredient(TechType.Titanium, 9));
+                new CraftData.Ingredient(TechType.Titanium, 10));
             CraftDataHandler.SetRecipeData(TechType.TitaniumIngot, titaniumIngotRecipe);
 
             // titanium recipe (from scrap metal)
@@ -99,12 +97,12 @@ namespace RRM.XtremeRLRecipes
                 {
                     new CraftData.Ingredient(TechType.ScrapMetal)
                 },
-                LinkedItems = Enumerable.Repeat(TechType.Titanium, 6).ToList()
+                LinkedItems = Enumerable.Repeat(TechType.Titanium, 5).ToList()
             };
             CraftDataHandler.SetRecipeData(TechType.Titanium, titaniumRecipe);
         }
 
-        public static void AdvancedMaterialsRecipes_XR()
+        public static void AdvancedMaterialsRecipes_VR()
         {
             // aerogel recipe
             RecipeData aerogelRecipe = new(
@@ -114,8 +112,7 @@ namespace RRM.XtremeRLRecipes
 
             // benzene recipe
             RecipeData benzeneRecipe = new(
-                new CraftData.Ingredient(TechType.BloodOil, 3),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.BloodOil, 3));
             CraftDataHandler.SetRecipeData(TechType.Benzene, benzeneRecipe);
 
             // hatching enzyme recipe
@@ -124,22 +121,19 @@ namespace RRM.XtremeRLRecipes
                 new CraftData.Ingredient(TechType.TreeMushroomPiece),
                 new CraftData.Ingredient(TechType.RedGreenTentacleSeed),
                 new CraftData.Ingredient(TechType.SeaCrownSeed),
-                new CraftData.Ingredient(TechType.KooshChunk),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.KooshChunk));
             CraftDataHandler.SetRecipeData(TechType.HatchingEnzymes, hatchingEnzymesRecipe);
 
             // hydrocloric acid recipe
             RecipeData hydrocloricAcidRecipe = new(
-                new CraftData.Ingredient(TechType.WhiteMushroom, 3),
-                new CraftData.Ingredient(TechType.Salt),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.WhiteMushroom, 2),
+                new CraftData.Ingredient(TechType.Salt));
             CraftDataHandler.SetRecipeData(TechType.HydrochloricAcid, hydrocloricAcidRecipe);
 
             // polyaniline recipe
             RecipeData polyanilineRecipe = new(
                 new CraftData.Ingredient(TechType.Gold),
-                new CraftData.Ingredient(TechType.HydrochloricAcid),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.HydrochloricAcid));
             CraftDataHandler.SetRecipeData(TechType.Polyaniline, polyanilineRecipe);
 
             // synthetic fibers recipe
@@ -149,7 +143,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.AramidFibers, syntheticFibersRecipe);
         }
 
-        public static void ElectronicsRecipes_XR()
+        public static void ElectronicsRecipes_VR()
         {
             // advanced wiring kit recipe
             RecipeData advancedWiringKitRecipe = new(
@@ -161,8 +155,7 @@ namespace RRM.XtremeRLRecipes
             // battery recipe
             RecipeData batteryRecipe = new(
                 new CraftData.Ingredient(TechType.AcidMushroom, 2),
-                new CraftData.Ingredient(TechType.Copper),
-                new CraftData.Ingredient(TechType.Titanium));
+                new CraftData.Ingredient(TechType.Copper));
             CraftDataHandler.SetRecipeData(TechType.Battery, batteryRecipe);
 
             // computer chip recipe
@@ -174,30 +167,27 @@ namespace RRM.XtremeRLRecipes
 
             // copper wire recipe
             RecipeData copperWireRecipe = new(
-                new CraftData.Ingredient(TechType.Copper, 2),
-                new CraftData.Ingredient(TechType.Silicone));
+                new CraftData.Ingredient(TechType.Copper, 2));
             CraftDataHandler.SetRecipeData(TechType.CopperWire, copperWireRecipe);
 
             // ion battery recipe
             RecipeData ionBatteryRecipe = new(
                 new CraftData.Ingredient(TechType.PrecursorIonCrystal),
                 new CraftData.Ingredient(TechType.Gold),
-                new CraftData.Ingredient(TechType.Silver),
-                new CraftData.Ingredient(TechType.Titanium));
+                new CraftData.Ingredient(TechType.Silver));
             CraftDataHandler.SetRecipeData(TechType.PrecursorIonBattery, ionBatteryRecipe);
 
             // ion power cell recipe
             RecipeData ionPowerCellRecipe = new(
                 new CraftData.Ingredient(TechType.PrecursorIonBattery, 2),
-                new CraftData.Ingredient(TechType.Silicone),
-                new CraftData.Ingredient(TechType.Titanium, 2));
+                new CraftData.Ingredient(TechType.Silicone));
             CraftDataHandler.SetRecipeData(TechType.PrecursorIonPowerCell, ionPowerCellRecipe);
 
             // lithium-ion battery recipe
             RecipeData lithiumIonBatteryRecipe = new(
                 new CraftData.Ingredient(TechType.AcidMushroom, 2),
                 new CraftData.Ingredient(TechType.Copper),
-            new CraftData.Ingredient(TechType.Lithium),
+                new CraftData.Ingredient(TechType.Lithium),
                 new CraftData.Ingredient(TechType.Titanium));
             CraftDataHandler.SetRecipeData(TechType.LithiumIonBattery, lithiumIonBatteryRecipe);
 
@@ -205,27 +195,24 @@ namespace RRM.XtremeRLRecipes
             // power cell battery recipe
             RecipeData powerCellRecipe = new(
                 new CraftData.Ingredient(TechType.Battery, 2),
-                new CraftData.Ingredient(TechType.Silicone),
-                new CraftData.Ingredient(TechType.Titanium));
+                new CraftData.Ingredient(TechType.Silicone));
             CraftDataHandler.SetRecipeData(TechType.PowerCell, powerCellRecipe);
 
             // reactor rod recipe
             RecipeData reactorRodRecipe = new(
                 new CraftData.Ingredient(TechType.UraniniteCrystal, 3),
-                new CraftData.Ingredient(TechType.Lead, 2),
-                new CraftData.Ingredient(TechType.Titanium, 2),
-                new CraftData.Ingredient(TechType.EnameledGlass, 2));
+                new CraftData.Ingredient(TechType.Lead),
+                new CraftData.Ingredient(TechType.Titanium),
+                new CraftData.Ingredient(TechType.EnameledGlass));
             CraftDataHandler.SetRecipeData(TechType.ReactorRod, reactorRodRecipe);
 
             // wiring kit recipe
             RecipeData wiringKitRecipe = new(
-                new CraftData.Ingredient(TechType.Silver, 2),
-                new CraftData.Ingredient(TechType.Copper),
-                new CraftData.Ingredient(TechType.Titanium));
+                new CraftData.Ingredient(TechType.Silver, 2));
             CraftDataHandler.SetRecipeData(TechType.WiringKit, wiringKitRecipe);
         }
 
-        public static void DeployablesRecipes_XR()
+        public static void DeployablesRecipes_VR()
         {
             // beacon recipe
             RecipeData beaconRecipe = new(
@@ -238,8 +225,7 @@ namespace RRM.XtremeRLRecipes
                 new CraftData.Ingredient(TechType.ComputerChip),
                 new CraftData.Ingredient(TechType.Battery),
                 new CraftData.Ingredient(TechType.Glass),
-                new CraftData.Ingredient(TechType.Titanium),
-                new CraftData.Ingredient(TechType.CopperWire));
+                new CraftData.Ingredient(TechType.Titanium));
             CraftDataHandler.SetRecipeData(TechType.MapRoomCamera, cameraDroneRecipe);
 
             // creature decoy recipe
@@ -248,8 +234,8 @@ namespace RRM.XtremeRLRecipes
                 craftAmount = 0,
                 Ingredients =
                 {
-                    new CraftData.Ingredient(TechType.Titanium, 6),
-                    new CraftData.Ingredient(TechType.WiringKit, 2)
+                    new CraftData.Ingredient(TechType.Titanium, 3),
+                    new CraftData.Ingredient(TechType.WiringKit)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.CyclopsDecoy, 3).ToList()
             };
@@ -259,36 +245,31 @@ namespace RRM.XtremeRLRecipes
             RecipeData gravTrapRecipe = new(
                 new CraftData.Ingredient(TechType.Battery),
                 new CraftData.Ingredient(TechType.Copper),
-                new CraftData.Ingredient(TechType.Titanium, 2));
+                new CraftData.Ingredient(TechType.Titanium));
             CraftDataHandler.SetRecipeData(TechType.Gravsphere, gravTrapRecipe);
 
             // mobile vehicle bay recipe
             RecipeData mobileVehicleBayRecipe = new(
                 new CraftData.Ingredient(TechType.TitaniumIngot),
                 new CraftData.Ingredient(TechType.Lubricant),
-                new CraftData.Ingredient(TechType.PowerCell),
-                new CraftData.Ingredient(TechType.WiringKit),
-                new CraftData.Ingredient(TechType.ComputerChip),
-                new CraftData.Ingredient(TechType.Silicone, 4));
+                new CraftData.Ingredient(TechType.PowerCell));
             CraftDataHandler.SetRecipeData(TechType.Constructor, mobileVehicleBayRecipe);
 
             // seaglide recipe
             RecipeData seaglideRecipe = new(
                 new CraftData.Ingredient(TechType.Battery),
                 new CraftData.Ingredient(TechType.Lubricant),
-                new CraftData.Ingredient(TechType.CopperWire, 2),
-                new CraftData.Ingredient(TechType.Titanium),
-                new CraftData.Ingredient(TechType.Glass));
+                new CraftData.Ingredient(TechType.CopperWire),
+                new CraftData.Ingredient(TechType.Titanium));
             CraftDataHandler.SetRecipeData(TechType.Seaglide, seaglideRecipe);
 
             // waterproof locker recipe
             RecipeData waterproofLockerRecipe = new(
-                new CraftData.Ingredient(TechType.Titanium, 4),
-                new CraftData.Ingredient(TechType.Silicone, 2));
+                new CraftData.Ingredient(TechType.Titanium, 2));
             CraftDataHandler.SetRecipeData(TechType.SmallStorage, waterproofLockerRecipe);
         }
 
-        public static void EquipmentRecipes_XR()
+        public static void EquipmentRecipes_VR()
         {
             // blue tablet recipe
             RecipeData blueTabletRecipe = new(
@@ -454,7 +435,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.WaterFiltrationSuit, waterFiltrationSuitRecipe);
         }
 
-        public static void ToolsRecipes_XR()
+        public static void ToolsRecipes_VR()
         {
             // air bladder recipe
             RecipeData airBladderRecipe = new(
@@ -557,7 +538,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.HeatBlade, thermobladeRecipe);
         }
 
-        public static void VehiclesRecipes_XR()
+        public static void VehiclesRecipes_VR()
         {
             // cyclops recipe
             RecipeData cyclopsRecipe = new(
@@ -625,7 +606,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.RocketStage3, rocketCockpitRecipe);
         }
 
-        public static void UpgradeModulesRecipes_XR()
+        public static void UpgradeModulesRecipes_VR()
         {
             // cyclops decoy tube upgrade recipe
             RecipeData cyclopsDecoyTubeUpgradeRecipe = new(
@@ -831,7 +812,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.SeamothTorpedoModule, torpedoSystemRecipe);
         }
 
-        public static void BasePiecesRecipes_XR()
+        public static void BasePiecesRecipes_VR()
         {
             // foundation recipe
             RecipeData foundationRecipe = new(
@@ -942,7 +923,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.BaseReinforcement, BaseReinforcementRecipe);
         }
 
-        public static void BaseExteriorModulesRecipes_XR()
+        public static void BaseExteriorModulesRecipes_VR()
         {
             // solar panel recipe
             RecipeData solarPanelRecipe = new(
@@ -993,7 +974,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.BasePipeConnector, basePipeConnectorRecipe);
         }
 
-        public static void BaseInteriorPiecesRecipes_XR()
+        public static void BaseInteriorPiecesRecipes_VR()
         {
             // ladder recipe
             RecipeData ladderRecipe = new(
@@ -1058,7 +1039,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.BasePartitionDoor, largeRoomPatitionDoorRecipe);
         }
 
-        public static void BaseInteriorModulesRecipes_XR()
+        public static void BaseInteriorModulesRecipes_VR()
         {
             // fabricator recipe
             RecipeData fabricatorRecipe = new(
@@ -1158,7 +1139,7 @@ namespace RRM.XtremeRLRecipes
             CraftDataHandler.SetRecipeData(TechType.PlanterShelf, plantShelfRecipe);
         }
 
-        public static void BaseDecorationsRecipes_XR()
+        public static void BaseDecorationsRecipes_VR()
         {
             // bench recipe
             RecipeData benchRecipe = new(

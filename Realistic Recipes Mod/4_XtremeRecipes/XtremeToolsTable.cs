@@ -10,7 +10,7 @@ namespace RRM.XtremeRLRecipes
 {
     public class XtremeRLToolsTable
     {
-        public static void RegisterAllTools()
+        public static void RegisterAll()
         {
             var types = Assembly.GetExecutingAssembly().GetTypes()
                                 .Where(t => t.Namespace == "RRM.gm4-XtremeRecipes.Items.Tools" && t.IsClass);

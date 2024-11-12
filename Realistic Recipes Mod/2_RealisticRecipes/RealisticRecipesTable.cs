@@ -10,8 +10,8 @@ namespace RRM.RealisticRecipes
 {
     public static class RealisticRecipesTable
     {
-        // regroup all functions together so they are called at the same time by 'RegisterAllRecipes()' inside the file 'Plugin.cs'
-        public static bool RegisterAllRecipes()
+        // regroup all methods together so they are called at the same time by 'RegisterAll()' inside the file 'Plugin.cs'
+        public static bool RegisterAll()
         {
             BasicMaterialsRecipes_RR();
             AdvancedMaterialsRecipes_RR();
@@ -35,15 +35,15 @@ namespace RRM.RealisticRecipes
         {
             // bleach recipe
             RecipeData bleachRecipe = new(
-                //new CraftData.Ingredient(TechType.Salt),
-                //new CraftData.Ingredient(TechType.CoralChunk),
-                new CraftData.Ingredient(TechType.UraniniteCrystal, 20),
-                new CraftData.Ingredient(TechType.Diamond, 10));
+                new CraftData.Ingredient(TechType.Salt),
+                new CraftData.Ingredient(TechType.CoralChunk, 2),
+                new CraftData.Ingredient(TechType.PurpleBrainCoralPiece),
+                new CraftData.Ingredient(TechType.FiberMesh));
             CraftDataHandler.SetRecipeData(TechType.Bleach, bleachRecipe);
 
             // enameled glass recipe
             RecipeData enameledGlassRecipe = new(
-                new CraftData.Ingredient(TechType.StalkerTooth),
+                new CraftData.Ingredient(TechType.StalkerTooth, 2),
                 new CraftData.Ingredient(TechType.Glass));
             CraftDataHandler.SetRecipeData(TechType.EnameledGlass, enameledGlassRecipe);
 
@@ -63,7 +63,8 @@ namespace RRM.RealisticRecipes
                 craftAmount = 0,
                 Ingredients =
                 {
-                    new CraftData.Ingredient(TechType.CreepvineSeedCluster)
+                    new CraftData.Ingredient(TechType.CreepvineSeedCluster),
+                    new CraftData.Ingredient(TechType.Silicone, 2)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Lubricant, 2).ToList()
             };
@@ -72,9 +73,7 @@ namespace RRM.RealisticRecipes
             // plasteel ingot recipe
             RecipeData plasteelIngotRecipe = new(
                 new CraftData.Ingredient(TechType.TitaniumIngot),
-                new CraftData.Ingredient(TechType.Lithium, 3));
-                //new CraftData.Ingredient(TechType.Lithium, 2),
-                //new CraftData.Ingredient(TechType.Lead, 2));
+                new CraftData.Ingredient(TechType.Lead, 3));
             CraftDataHandler.SetRecipeData(TechType.PlasteelIngot, plasteelIngotRecipe);
 
             // silicone rubber recipe
@@ -83,7 +82,8 @@ namespace RRM.RealisticRecipes
                 craftAmount = 0,
                 Ingredients =
                 {
-                    new CraftData.Ingredient(TechType.CreepvineSeedCluster)
+                    new CraftData.Ingredient(TechType.CreepvineSeedCluster),
+                    new CraftData.Ingredient(TechType.Quartz, 2)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Silicone, 2).ToList()
             };
@@ -103,6 +103,7 @@ namespace RRM.RealisticRecipes
                     new CraftData.Ingredient(TechType.ScrapMetal)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Titanium, 6).ToList()
+
             };
             CraftDataHandler.SetRecipeData(TechType.Titanium, titaniumRecipe);
         }
@@ -112,6 +113,7 @@ namespace RRM.RealisticRecipes
             // aerogel recipe
             RecipeData aerogelRecipe = new(
                 new CraftData.Ingredient(TechType.JellyPlant),
+                new CraftData.Ingredient(TechType.Bladderfish),
                 new CraftData.Ingredient(TechType.AluminumOxide));
             CraftDataHandler.SetRecipeData(TechType.Aerogel, aerogelRecipe);
 
@@ -133,14 +135,14 @@ namespace RRM.RealisticRecipes
 
             // hydrocloric acid recipe
             RecipeData hydrocloricAcidRecipe = new(
-                new CraftData.Ingredient(TechType.WhiteMushroom, 3),
+                new CraftData.Ingredient(TechType.WhiteMushroom, 4),
                 new CraftData.Ingredient(TechType.Salt),
                 new CraftData.Ingredient(TechType.Glass));
             CraftDataHandler.SetRecipeData(TechType.HydrochloricAcid, hydrocloricAcidRecipe);
 
             // polyaniline recipe
             RecipeData polyanilineRecipe = new(
-                new CraftData.Ingredient(TechType.Gold),
+                new CraftData.Ingredient(TechType.Benzene),
                 new CraftData.Ingredient(TechType.HydrochloricAcid),
                 new CraftData.Ingredient(TechType.Glass));
             CraftDataHandler.SetRecipeData(TechType.Polyaniline, polyanilineRecipe);
@@ -209,7 +211,7 @@ namespace RRM.RealisticRecipes
             RecipeData powerCellRecipe = new(
                 new CraftData.Ingredient(TechType.Battery, 2),
                 new CraftData.Ingredient(TechType.Silicone),
-                new CraftData.Ingredient(TechType.Titanium));
+                new CraftData.Ingredient(TechType.Titanium, 2));
             CraftDataHandler.SetRecipeData(TechType.PowerCell, powerCellRecipe);
 
             // reactor rod recipe

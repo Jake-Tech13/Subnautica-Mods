@@ -8,12 +8,12 @@ using UnityEngine;
 
 namespace RRM.XtremeRLRecipes
 {
-    public class XtremeRLResourcesTable
+    public class XtremeRLEquipmentsTable
     {
-        public static void RegisterAllResources()
+        public static void RegisterAll()
         {
             var types = Assembly.GetExecutingAssembly().GetTypes()
-                                .Where(t => t.Namespace == "RRM.gm4-XtremeRecipes.Items.Resources" && t.IsClass);
+                                .Where(t => t.Namespace == "RRM.gm4-XtremeRecipes.Items.Equipments" && t.IsClass);
             foreach (var type in types)
             {
                 var methodInfo = type.GetMethod("Register", BindingFlags.Public | BindingFlags.Static);

@@ -10,8 +10,8 @@ namespace RRM.FaithfulRecipes
 {
     public class FaithfulRecipesTable
     {
-        // regroup all functions together so they are called at the same time by 'RegisterAllRecipes()' inside the file 'Plugin.cs'
-        public static void RegisterAllRecipes()
+        // regroup all functions together so they are called at the same time by 'RegisterAll()' inside the file 'Plugin.cs'
+        public static void RegisterAll()
         {
             BasicMaterialsRecipes_FR();
             AdvancedMaterialsRecipes_FR();

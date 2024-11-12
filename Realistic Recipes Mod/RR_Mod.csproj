@@ -1,17 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+	
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-	<AssemblyName>RealisticRecipesMod</AssemblyName>
+	<TargetFramework>net472</TargetFramework>
+    <AssemblyName>RealisticRecipesMod</AssemblyName>
     <Version>1.0.0</Version>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>11</LangVersion>
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	<LangVersion>11</LangVersion>
+	  
 	<RootNamespace>RRM</RootNamespace>
-
-    <RestoreAdditionalProjectSources>
-      https://api.nuget.org/v3/index.json;
-      https://nuget.bepinex.dev/v3/index.json;
-    </RestoreAdditionalProjectSources>
+		
+	<RestoreAdditionalProjectSources>
+	  https://api.nuget.org/v3/index.json;
+	  https://nuget.bepinex.dev/v3/index.json;
+	</RestoreAdditionalProjectSources>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,34 +30,87 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="gm4-XtremeRecipes\Items\Equipment\" />
-    <Folder Include="gm4-XtremeRecipes\Items\Materials\" />
-    <Folder Include="gm3-FaithfulRecipes\Items\Equipment\" />
-    <Folder Include="gm3-FaithfulRecipes\Items\Materials\" />
+    <Folder Include="4_XtremeRecipes\Items\Equipment\" />
+    <Folder Include="4_XtremeRecipes\Items\Materials\" />
+    <Folder Include="3_FaithfulRecipes\Items\Equipment\" />
+    <Folder Include="3_FaithfulRecipes\Items\Materials\" />
   </ItemGroup>
 
+  <PropertyGroup>
+	<Path0Harmony Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll')">
+	  E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll
+	</Path0Harmony>
+	<Path0HarmonyFallback Condition="'$(Path0Harmony)' == ''">
+	  C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll
+	</Path0HarmonyFallback>
+	<PathBepInEx Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll')">
+	  E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll
+	</PathBepInEx>
+	<PathBepInExFallback Condition="'$(PathBepInEx)' == ''">
+	  C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll
+	</PathBepInExFallback>
+	<PathNautilus Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll')">
+	  E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll
+	</PathNautilus>
+	<PathNautilusFallback Condition="'$(PathNautilus)' == ''">
+	  C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll
+	</PathNautilusFallback>
+	<PathUnityEngine Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll')">
+	  E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll
+	</PathUnityEngine>
+	<PathUnityEngineFallback Condition="'$(PathUnityEngine)' == ''">
+	  C:\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll
+	</PathUnityEngineFallback>
+	<PathUnityEngineCoreModule Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll')">
+	  E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll
+	</PathUnityEngineCoreModule>
+	<PathUnityEngineCoreModuleFallback Condition="'$(PathUnityEngineCoreModule)' == ''">
+	  C:\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll
+	</PathUnityEngineCoreModuleFallback>
+	<PathUnityEngineUI Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll')">
+	  E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll
+	</PathUnityEngineUI>
+	<PathUnityEngineUIFallback Condition="'$(PathUnityEngineUI)' == ''">
+	  C:\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll
+	</PathUnityEngineUIFallback>
+  </PropertyGroup>
+	
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="BepInEx">
-      <HintPath>E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll</HintPath>
-    </Reference>
-    <Reference Include="Nautilus">
-      <HintPath>E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll</HintPath>
-    </Reference>
+	<Reference Include="0Harmony">
+	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll')">$(Path0Harmony)</HintPath>
+	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll')">$(Path0HarmonyFallback)</HintPath>
+	</Reference>
+	<Reference Include="BepInEx">
+	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll')">$(PathBepInEx)</HintPath>
+	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll')">$(PathBepInExFallback)</HintPath>
+	</Reference>
+	<Reference Include="Nautilus">
+	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll')">$(PathNautilus)</HintPath>
+	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll')">$(PathNautilusFallback)</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine">
+	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll')">$(PathUnityEngine)</HintPath>
+	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll')">$(PathUnityEngineFallback)</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine.CoreModule">
+	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll')">$(PathUnityEngineCoreModule)</HintPath>
+	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll')">$(PathUnityEngineCoreModuleFallback)</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine.UI">
+	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll')">$(PathUnityEngineUI)</HintPath>
+	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll')">$(PathUnityEngineUIFallback)</HintPath>
+	</Reference>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mkdir &quot;E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)&quot;&#xD;&#xA;xcopy /q/y/i &quot;$(TargetPath)&quot; &quot;E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)&quot; /E /H /C" />
+	<PropertyGroup>
+	  <PrimaryPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)')">E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)</PrimaryPath>
+	  <FallbackPath Condition="'$(PrimaryPath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)</FallbackPath>
+	  <DestinationPath Condition="'$(PrimaryPath)' != ''">$(PrimaryPath)</DestinationPath>
+	  <DestinationPath Condition="'$(PrimaryPath)' == ''">$(FallbackPath)</DestinationPath>
+	</PropertyGroup>
+
+	<Exec Command="if not exist &quot;$(DestinationPath)&quot; mkdir &quot;$(DestinationPath)&quot;" />
+	<Exec Command="xcopy /q /y /i &quot;$(TargetPath)&quot; &quot;$(DestinationPath)&quot; /E /H /C" />
   </Target>
 </Project>

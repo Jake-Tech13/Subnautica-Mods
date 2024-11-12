@@ -2,46 +2,31 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using System.Reflection;
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using UnityEngine;
-using Nautilus.Json.Converters;
-using Nautilus.Utility;
-using Newtonsoft.Json;
-using System.Collections;
-using System.IO;
-using RRM.MainMenu_GUI;
-using RRM.LoggerLines;
 using RRM.SaveFileManager;
-using static RRM.SaveFileManager.SFM;
 using Nautilus.Handlers;
-using RRM.RealisticRecipes;
-using Nautilus.Commands;
 using Nautilus.Json;
-using Nautilus.Json.Attributes;
-using Nautilus.Options;
-using Nautilus.Options.Attributes;
-using static OVRHaptics;
-using static FlexibleGridLayout;
-using RRM.ComplexRecipes;
-using RRM.FaithfulRecipes;
-using RRM.XtremeRLRecipes;
+using RRM.UI_files;
+using RRM.LoggerLines;
+using System.Net;
+using System.Net.Sockets;
 
 namespace RRM
 {
     [BepInDependency("com.snmodding.nautilus")]
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
     public class Plugin : BaseUnityPlugin
     {
         private const string PLUGIN_GUID = "Jake_Tonic.RealisticRecipesMod";
         private const string PLUGIN_NAME = "Realistic Recipes Mod";
-        private const string PLUGIN_VERSION = "1.0.0";
+        private const string PLUGIN_VERSION = "0.9.0";
 
         public new static ManualLogSource Logger { get; private set; }
         private static Assembly Assembly { get; } = Assembly.GetExecutingAssembly();
 
-        // calls and patches any modified/added code inside Subnautica's code
+        internal static SaveData saveData;
+
+        public static bool isAlreadyPrinted;
+
         private void Awake()
         {
             // set project-scoped logger instance
@@ -50,6 +35,34 @@ namespace RRM
             // register harmony patches, if there are any
             Harmony.CreateAndPatchAll(Assembly, $"{PluginInfo.PLUGIN_GUID}");
             Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+
+            // saves mod data to corresponding game save slot under "\RealisticRecipesMod\RealisticRecipesMod.json"
+            saveData = SaveDataHandler.RegisterSaveDataCache<SaveData>();
+            saveData.OnStartedSaving += (object sender, JsonFileEventArgs e) =>
+            {
+                SaveData data = e.Instance as SaveData;
+                data.Difficulty = uGUI_DifficultyPanel.difficultyIndex;
+                Logger.LogWarning($"Difficulty value: {data.Difficulty}");
+            };
+
+            // loads mod data from the file it has been saved to
+            saveData.OnFinishedLoading += (object sender, JsonFileEventArgs e) =>
+            {
+                SaveData data = e.Instance as SaveData;
+                int savedDifficulty = data.Difficulty;
+                Logger.LogWarning($"savedDifficulty value: {savedDifficulty}");
+
+                // if saved value not in range, throws an error; else, passes the variable to the method parameter
+                if (savedDifficulty > 4 || savedDifficulty < 0)
+                {
+                    Logger.LogError(LogError_Lines.error_GM);
+                }
+                else
+                {
+                    SFM.LoadModdedFiles(savedDifficulty);
+                    Logger.LogWarning("Saved game successfully loaded with modded files!");
+                }
+            };
         }
     }
 }

@@ -6,14 +6,14 @@ using Nautilus.Assets;
 using Nautilus.Assets.PrefabTemplates;
 using UnityEngine;
 
-namespace RRM.XtremeRLRecipes
+namespace RRM.FaithfulRecipes
 {
-    public class XtremeRLEquipmentsTable
+    public class FaithfulToolsTable
     {
-        public static void RegisterAllEquipments()
+        public static void RegisterAll()
         {
             var types = Assembly.GetExecutingAssembly().GetTypes()
-                                .Where(t => t.Namespace == "RRM.gm4-XtremeRecipes.Items.Equipments" && t.IsClass);
+                                .Where(t => t.Namespace == "RRM.gm3-FaithfulRecipes.Items.Tools" && t.IsClass);
             foreach (var type in types)
             {
                 var methodInfo = type.GetMethod("Register", BindingFlags.Public | BindingFlags.Static);

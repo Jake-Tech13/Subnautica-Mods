@@ -10,7 +10,7 @@ namespace RRM.FaithfulRecipes
 {
     public class FaithfulMaterialsTable
     {
-        public static void RegisterAllMaterials()
+        public static void RegisterAll()
         {
             var types = Assembly.GetExecutingAssembly().GetTypes()
                                 .Where(t => t.Namespace == "RRM.gm3-FaithfulRecipes.Items.Materials" && t.IsClass);
