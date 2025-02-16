@@ -141,3 +141,4 @@ C:\Users\jaket\Documents\GitHub\Subnautica-Mods\Realistic Recipes Mod\obj\Debug\
 C:\Users\jaket\Documents\GitHub\Subnautica-Mods\Realistic Recipes Mod\obj\Debug\net472\RR_Mod.csproj.Up2Date
 C:\Users\jaket\Documents\GitHub\Subnautica-Mods\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipesMod.dll
 C:\Users\jaket\Documents\GitHub\Subnautica-Mods\Realistic Recipes Mod\obj\Debug\net472\RealisticRecipesMod.pdb
+C:\Users\jaket\Documents\GitHub\Subnautica-Mods\Realistic Recipes Mod\bin\Debug\net472\Newtonsoft.Json.dll

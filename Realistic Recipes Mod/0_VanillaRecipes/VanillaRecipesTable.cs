@@ -6,12 +6,11 @@ using Nautilus.Crafting;
 using Nautilus.Handlers;
 using Nautilus.Assets;
 
-
 namespace RRM.VanillaRecipes
 {
     public class VanillaRecipesTable
     {
-        // regroup all methods together so they are called at the same time by 'RegisterAll()' inside the file 'Plugin.cs'
+        // regroup all methods so they are called together by 'RegisterAll()' inside the 'Plugin.cs' file
         public static void RegisterAll()
         {
             BasicMaterialsRecipes_VR();
@@ -29,7 +28,7 @@ namespace RRM.VanillaRecipes
             BaseDecorationsRecipes_VR();
         }
 
-        // items are listed in the same order as they appear in their in-game respective fabricator UI
+        // items are listed in the same order they appear in their in-game respective fabricator UI
         public static void BasicMaterialsRecipes_VR()
         {
             // bleach recipe
@@ -97,7 +96,7 @@ namespace RRM.VanillaRecipes
                 {
                     new CraftData.Ingredient(TechType.ScrapMetal)
                 },
-                LinkedItems = Enumerable.Repeat(TechType.Titanium, 5).ToList()
+                LinkedItems = Enumerable.Repeat(TechType.Titanium, 4).ToList()
             };
             CraftDataHandler.SetRecipeData(TechType.Titanium, titaniumRecipe);
         }
@@ -126,7 +125,7 @@ namespace RRM.VanillaRecipes
 
             // hydrocloric acid recipe
             RecipeData hydrocloricAcidRecipe = new(
-                new CraftData.Ingredient(TechType.WhiteMushroom, 2),
+                new CraftData.Ingredient(TechType.WhiteMushroom, 3),
                 new CraftData.Ingredient(TechType.Salt));
             CraftDataHandler.SetRecipeData(TechType.HydrochloricAcid, hydrocloricAcidRecipe);
 
@@ -185,10 +184,8 @@ namespace RRM.VanillaRecipes
 
             // lithium-ion battery recipe
             RecipeData lithiumIonBatteryRecipe = new(
-                new CraftData.Ingredient(TechType.AcidMushroom, 2),
-                new CraftData.Ingredient(TechType.Copper),
-                new CraftData.Ingredient(TechType.Lithium),
-                new CraftData.Ingredient(TechType.Titanium));
+                new CraftData.Ingredient(TechType.Battery),
+                new CraftData.Ingredient(TechType.Lithium));
             CraftDataHandler.SetRecipeData(TechType.LithiumIonBattery, lithiumIonBatteryRecipe);
 
 
@@ -216,7 +213,7 @@ namespace RRM.VanillaRecipes
         {
             // beacon recipe
             RecipeData beaconRecipe = new(
-                new CraftData.Ingredient(TechType.CopperWire),
+                new CraftData.Ingredient(TechType.Copper),
                 new CraftData.Ingredient(TechType.Titanium));
             CraftDataHandler.SetRecipeData(TechType.Beacon, beaconRecipe);
 

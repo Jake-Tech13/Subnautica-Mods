@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\savefilemanager\\savefilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:savefilemanager\\savefilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\ui_files\\ugui_difficultyselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:ui_files\\ugui_difficultyselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\1_complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:1_complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\savefilemanager\\savefilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:savefilemanager\\savefilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\0_vanillarecipes\\vanillarecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:0_vanillarecipes\\vanillarecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\1_complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|solutionrelative:1_complexrecipes\\complexrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC34B22E-D0C2-4F61-AEC5-153F28D95578}|RR_Mod.csproj|c:\\users\\jaket\\documents\\github\\subnautica-mods\\realistic recipes mod\\2_realisticrecipes\\realisticrecipestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -48,20 +48,20 @@
               "RelativeDocumentMoniker": "RR_Mod.csproj",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
               "RelativeToolTip": "RR_Mod.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-10-03T23:06:46.481Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Plugin.cs",
               "DocumentMoniker": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\Plugin.cs",
               "RelativeDocumentMoniker": "Plugin.cs",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\Plugin.cs",
               "RelativeToolTip": "Plugin.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T20:24:58.751Z",
               "IsPinned": true,
@@ -69,26 +69,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SaveFileManager.cs",
               "DocumentMoniker": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\SaveFileManager\\SaveFileManager.cs",
               "RelativeDocumentMoniker": "SaveFileManager\\SaveFileManager.cs",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\SaveFileManager\\SaveFileManager.cs",
               "RelativeToolTip": "SaveFileManager\\SaveFileManager.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCEAAADlAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwE0AAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T21:01:16.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "uGUI_DifficultySelector.cs",
               "DocumentMoniker": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\UI_files\\uGUI_DifficultySelector.cs",
               "RelativeDocumentMoniker": "UI_files\\uGUI_DifficultySelector.cs",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\UI_files\\uGUI_DifficultySelector.cs",
               "RelativeToolTip": "UI_files\\uGUI_DifficultySelector.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAwIgAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAQwG4AAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T12:47:37.318Z",
               "EditorCaption": ""
@@ -101,23 +101,21 @@
               "RelativeDocumentMoniker": "0_VanillaRecipes\\VanillaRecipesTable.cs",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\0_VanillaRecipes\\VanillaRecipesTable.cs",
               "RelativeToolTip": "0_VanillaRecipes\\VanillaRecipesTable.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwB8BAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T14:05:57.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T14:05:57.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ComplexRecipesTable.cs",
               "DocumentMoniker": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\1_ComplexRecipes\\ComplexRecipesTable.cs",
               "RelativeDocumentMoniker": "1_ComplexRecipes\\ComplexRecipesTable.cs",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\1_ComplexRecipes\\ComplexRecipesTable.cs",
               "RelativeToolTip": "1_ComplexRecipes\\ComplexRecipesTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:43:54.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T08:43:54.555Z"
             },
             {
               "$type": "Document",
@@ -127,7 +125,7 @@
               "RelativeDocumentMoniker": "2_RealisticRecipes\\RealisticRecipesTable.cs",
               "ToolTip": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\2_RealisticRecipes\\RealisticRecipesTable.cs",
               "RelativeToolTip": "2_RealisticRecipes\\RealisticRecipesTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEECAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T08:44:34.908Z"
             }

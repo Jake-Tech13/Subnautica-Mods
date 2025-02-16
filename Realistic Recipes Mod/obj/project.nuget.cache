@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lDiVZtIQ4pc=",
+  "dgSpecHash": "WHS6g4kJ2tw=",
   "success": true,
   "projectFilePath": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
   "expectedPackageFiles": [
@@ -14,10 +14,10 @@
     "C:\\Users\\jaket\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\monomod.runtimedetour\\21.12.13.1\\monomod.runtimedetour.21.12.13.1.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\monomod.utils\\21.12.13.1\\monomod.utils.21.12.13.1.nupkg.sha512",
-    "C:\\Users\\jaket\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\jaket\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\polysharp\\1.13.1\\polysharp.1.13.1.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\subnautica.gamelibs\\71288.0.0-r.0\\subnautica.gamelibs.71288.0.0-r.0.nupkg.sha512",
-    "C:\\Users\\jaket\\.nuget\\packages\\subnautica.nautilus\\1.0.0-pre.32\\subnautica.nautilus.1.0.0-pre.32.nupkg.sha512",
+    "C:\\Users\\jaket\\.nuget\\packages\\subnautica.nautilus\\1.0.0-pre.34\\subnautica.nautilus.1.0.0-pre.34.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\unityengine.modules\\2019.4.36\\unityengine.modules.2019.4.36.nupkg.sha512"
   ],
   "logs": []

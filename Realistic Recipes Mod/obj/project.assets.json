@@ -134,7 +134,7 @@
           }
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {
@@ -142,7 +142,7 @@
           }
         },
         "runtime": {
-          "lib/net45/_._": {
+          "lib/net45/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         }
@@ -206,7 +206,7 @@
           "lib/net472/UnityEngine.UI.dll": {}
         }
       },
-      "Subnautica.Nautilus/1.0.0-pre.32": {
+      "Subnautica.Nautilus/1.0.0-pre.34": {
         "type": "package",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
@@ -826,14 +826,15 @@
         "monomod.utils.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -842,17 +843,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -929,17 +928,17 @@
         "subnautica.gamelibs.nuspec"
       ]
     },
-    "Subnautica.Nautilus/1.0.0-pre.32": {
-      "sha512": "jYqB71kmxh0Mf00kkiFAEBCilVqJMm/4DYU5M2AfSanjnCirj9AVNSQS7X93ts4aisdaQc4c1gad0VxUJINHMQ==",
+    "Subnautica.Nautilus/1.0.0-pre.34": {
+      "sha512": "wzisqezkiR2nrGg9X9VWdnD7HqFja5x7ov7fRJ9XJqsWLkMtRqBenDYmVSs5FDz+TDkLPZTckZAQQ4noB1ANcA==",
       "type": "package",
-      "path": "subnautica.nautilus/1.0.0-pre.32",
+      "path": "subnautica.nautilus/1.0.0-pre.34",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net472/Nautilus.dll",
         "lib/net472/Nautilus.xml",
         "logo.png",
-        "subnautica.nautilus.1.0.0-pre.32.nupkg.sha512",
+        "subnautica.nautilus.1.0.0-pre.34.nupkg.sha512",
         "subnautica.nautilus.nuspec"
       ]
     },
@@ -1140,6 +1139,7 @@
       "BepInEx.Core >= 5.4.21",
       "BepInEx.PluginInfoProps >= 1.1.0",
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.2",
+      "Newtonsoft.Json >= 13.0.3",
       "PolySharp >= 1.13.1",
       "Subnautica.GameLibs >= 71288.0.0-r.0",
       "Subnautica.Nautilus >= 1.*-*",
@@ -1147,7 +1147,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jaket\\.nuget\\packages\\": {}
+    "C:\\Users\\jaket\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1158,8 +1159,12 @@
       "packagesPath": "C:\\Users\\jaket\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\jaket\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1167,7 +1172,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.bepinex.dev/v3/index.json": {}
@@ -1187,7 +1191,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net472": {
@@ -1211,6 +1216,10 @@
             "target": "Package",
             "version": "[1.0.2, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
           "PolySharp": {
             "target": "Package",
             "version": "[1.13.1, )"
@@ -1230,7 +1239,7 @@
             "version": "[2019.4.36, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

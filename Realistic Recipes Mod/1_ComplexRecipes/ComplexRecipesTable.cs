@@ -10,7 +10,7 @@ namespace RRM.ComplexRecipes
 {
     public static class ComplexRecipesTable
     {
-        // regroup all methods so they are called one after another by 'RegisterAll()' and then executed together inside the file 'Plugin.cs'
+        // regroup all methods so they are called together by 'RegisterAll()' inside the 'Plugin.cs' file
         public static void RegisterAll()
         {
             BasicMaterialsRecipes_CR();
@@ -28,7 +28,7 @@ namespace RRM.ComplexRecipes
             BaseDecorationsRecipes_CR();
         }
 
-        // items are listed in the same order as they appear in their in-game respective fabricator UI
+        // items are listed in the same order they appear in their in-game respective fabricator UI
         public static void BasicMaterialsRecipes_CR()
         {
             // bleach recipe

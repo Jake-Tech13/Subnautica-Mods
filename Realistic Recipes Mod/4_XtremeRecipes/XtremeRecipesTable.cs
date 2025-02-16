@@ -11,7 +11,7 @@ namespace RRM.XtremeRLRecipes
 {
     public class XtremeRLRecipesTable
     {
-        // regroup all functions together so they are called at the same time by 'RegisterAll()' inside the file 'Plugin.cs'
+        // regroup all methods so they are called together by 'RegisterAll()' inside the 'Plugin.cs' file
         public static void RegisterAll()
         {
             BasicMaterialsRecipes_XR();
@@ -29,7 +29,7 @@ namespace RRM.XtremeRLRecipes
             BaseDecorationsRecipes_XR();
         }
 
-        // items are listed in the same order as they appear in their in-game respective fabricator UI
+        // items are listed in the same order they appear in their in-game respective fabricator UI
         public static void BasicMaterialsRecipes_XR()
         {
             // bleach recipe
