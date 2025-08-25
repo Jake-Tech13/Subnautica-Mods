@@ -27,7 +27,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://nuget.bepinex.dev/v3/index.json": {}
         },
         "frameworks": {
@@ -46,16 +45,15 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
             "BepInEx.Analyzers": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.*, )"
+              "version": "[1.0.8, )"
             },
             "BepInEx.Core": {
               "target": "Package",
@@ -80,12 +78,11 @@
             },
             "Subnautica.GameLibs": {
               "target": "Package",
-              "version": "[71288.0.0-r.0, )"
+              "version": "[82304.0.0-r.0, )"
             },
             "Subnautica.Nautilus": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.*-*, )"
+              "version": "[1.0.0-pre.42, )"
             },
             "UnityEngine.Modules": {
               "include": "Compile",
@@ -93,7 +90,7 @@
               "version": "[2019.4.36, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

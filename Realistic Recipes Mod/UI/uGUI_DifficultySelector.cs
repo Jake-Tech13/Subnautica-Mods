@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using JetBrains.Annotations;
 using RRM.LoggerLines;
-using RRM.SaveFileManager;
+using RRM.SFM;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -9,17 +9,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UWE;
 
-namespace RRM.UI_files
+namespace RRM.UI
 {
     [HarmonyPatch(typeof(uGUI_MainMenu))]
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE1006:Styles d'affectation de noms", Justification = "<En attente>")]
     internal class uGUI_DifficultyPanel
     {
-        public static int difficultyIndex;
+        public static int difficultyIndex = default;
+        public static bool wasLastDiffIndexSaved = false;
         internal static string gameModeIndex;
-        public static bool isDifficultyButtonPressed = false;
-
-        //public static bool newGameCalledAtLaunch = false; // [TEMP] bool var for when a new game is started at launch (not when a game is loaded)
 
         // dictionary in which modded buttons names and decriptions are stored to be later written on the Difficulty UI panel in the Main Menu
         private static readonly Dictionary<string, string>
@@ -28,10 +26,10 @@ namespace RRM.UI_files
             { "Header", "Difficulty" },
 
             { "Scroll View/Viewport/NewGameOptions/0. Vanilla/TitleContainer/ModeTitle", "Vanilla Recipes" },
-            { "Scroll View/Viewport/NewGameOptions/0. Vanilla/ModeDescription", "Start the game with all the original crafting recipes, in case you changed your mind." },
+            { "Scroll View/Viewport/NewGameOptions/0. Vanilla/ModeDescription", "Launch the game with all the original crafting recipes, in case you changed your mind." },
 
             { "Scroll View/Viewport/NewGameOptions/1. Complex/TitleContainer/ModeTitle", "Complex Recipes" },
-            { "Scroll View/Viewport/NewGameOptions/1. Complex/ModeDescription", "For players who want to add a little extra difficulty to their game.\r\n- This game mode makes vanilla recipes a little more demanding by increasing the quantity and diversity of the ingredients needed to craft them, or even by completely changing certain recipes for the sake of realism." },
+            { "Scroll View/Viewport/NewGameOptions/1. Complex/ModeDescription", "For players who want to add a little extra difficulty to their game.\r\n- This game mode makes vanilla recipes a little more demanding by slightly increasing the quantity and diversity of the ingredients needed to craft them. Some recipes can be completely changed for the sake of realism." },
 
             { "Scroll View/Viewport/NewGameOptions/2. Realistic/TitleContainer/ModeTitle", "Realistic Recipes" },
             { "Scroll View/Viewport/NewGameOptions/2. Realistic/ModeDescription", "For those who wish to experiment with a more tactical approach to the trade-off between resource gathering and the time spent on an objective.\r\n/!\\Not recommended for beginners or as a first playthrough/!\\\r\n- The \"realistic\" factor is based on or inspired by manufacturing recipes from real-life counterparts (if a reference is available), or is the direct product from the imagination of yours truly ;p" },
@@ -40,12 +38,14 @@ namespace RRM.UI_files
             { "Scroll View/Viewport/NewGameOptions/3. Faithful/ModeDescription", "This gamemode is currently under development and might be available sometime in a futur update.\r\nFollow Realistic Recipes Mod's progress on the Discord server 'Subnautica Modding' for more informations !"},
 
             { "Scroll View/Viewport/NewGameOptions/4. Extreme/TitleContainer/ModeTitle", "Extreme Realism (very much W.I.P)" },
-            { "Scroll View/Viewport/NewGameOptions/4. Extreme/ModeDescription", "This gamemode is currently under development (way more than the other one-) and might be available sometime in a futur update.\r\nFollow Realistic Recipes Mod's progress on the Discord server 'Subnautica Modding' for more informations !"}
+            { "Scroll View/Viewport/NewGameOptions/4. Extreme/ModeDescription", "This gamemode is currently under development (way more than the other one) and might be available sometime in a futur update.\r\nFollow Realistic Recipes Mod's progress on the Discord server 'Subnautica Modding' for more informations !"}
         };
 
         [HarmonyPatch(nameof(uGUI_MainMenu.Start)), HarmonyPostfix]
         private static void Start_Postfix(uGUI_MainMenu __instance)
         {
+            //wasLastDiffIndexSaved = false; // reset the unsaved index flag at the start of the game
+
             // instantiates and renames the gamemode selection UI panel
             Transform NewGame = __instance.transform.Find("Panel/MainMenu/RightSide/NewGame");
             GameObject rrmDifficulty = UnityEngine.Object.Instantiate(NewGame.gameObject, NewGame.parent);
@@ -114,7 +114,6 @@ namespace RRM.UI_files
                 button.onClick.m_PersistentCalls.Clear();
                 button.onClick.AddListener(() =>
                 {
-                    isDifficultyButtonPressed = true;
 
                     // removes the number and space from the gamemodes name (i.e., "1 Survival" will become "Survival")
                     GameMode gameMode = (GameMode)Enum.Parse(typeof(GameMode), gameModeIndex.Split(' ')[1]);
@@ -126,10 +125,7 @@ namespace RRM.UI_files
                     // finally launch the game after clicking on a Difficulty button
                     CoroutineHost.StartCoroutine(__instance.StartNewGame(gameMode));
 
-                    //newGameCalledAtLaunch = true;
-                    //Plugin.Logger.LogWarning($"'newGameCalledAtLaunch' set to: {newGameCalledAtLaunch}");
-
-                    SFM.LoadModdedFiles(difficultyIndex);
+                    //SaveFileManager.LoadModdedFiles(difficultyIndex); // this is now done in the SaveFileManager class, so that it can be called from the SaveDataHandler
                 });
             }
         }

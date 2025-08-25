@@ -5,7 +5,6 @@ using Nautilus.Crafting;
 using Nautilus.Extensions;
 using RRM.FaithfulRecipes.Items.Resources;
 using UnityEngine;
-using Ingredient = CraftData.Ingredient;
 
 namespace RRM.FaithfulRecipes.Items.Tools
 {
@@ -28,7 +27,7 @@ namespace RRM.FaithfulRecipes.Items.Tools
                 yeetKnife.damage *= 2f;
             };
             customPrefab.SetGameObject(yeetKnifeObj);
-            var recipe = new RecipeData(new Ingredient(TechType.HeatBlade), new Ingredient(Coal.Info.TechType, 4));
+            var recipe = new RecipeData(new Ingredient(TechType.HeatBlade, 1), new Ingredient(Coal.Info.TechType, 4));
             customPrefab.SetRecipe(recipe).WithFabricatorType(CraftTree.Type.Workbench);
             customPrefab.SetEquipment(EquipmentType.Hand);
             customPrefab.Register();

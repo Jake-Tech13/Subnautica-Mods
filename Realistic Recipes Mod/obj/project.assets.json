@@ -153,7 +153,7 @@
           "buildTransitive/PolySharp.targets": {}
         }
       },
-      "Subnautica.GameLibs/71288.0.0-r.0": {
+      "Subnautica.GameLibs/82304.0.0-r.0": {
         "type": "package",
         "compile": {
           "lib/net472/Assembly-CSharp-firstpass.dll": {},
@@ -206,12 +206,12 @@
           "lib/net472/UnityEngine.UI.dll": {}
         }
       },
-      "Subnautica.Nautilus/1.0.0-pre.34": {
+      "Subnautica.Nautilus/1.0.0-pre.42": {
         "type": "package",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "Newtonsoft.Json": "12.0.3",
-          "Subnautica.GameLibs": "71288.0.0-r.0",
+          "Subnautica.GameLibs": "82304.0.0-r.0",
           "UnityEngine.Modules": "2019.4.36"
         },
         "compile": {
@@ -872,10 +872,10 @@
         "polysharp.nuspec"
       ]
     },
-    "Subnautica.GameLibs/71288.0.0-r.0": {
-      "sha512": "Sia79mTXMpSLpEIkSDQlQ33VxagGh+zEsclCO0wr+AnbqBtuM7VdQcTOLH3MFGgAZbz3ZoRHqP2IuDFfVsgdoQ==",
+    "Subnautica.GameLibs/82304.0.0-r.0": {
+      "sha512": "pntzTyJI56pXUWqyaqgxST+qAyNrqS12SVhtIYYjDeqilVnzPjxDe65uSFspNjIORwyM/EfByb53xqfWOxZzEg==",
       "type": "package",
-      "path": "subnautica.gamelibs/71288.0.0-r.0",
+      "path": "subnautica.gamelibs/82304.0.0-r.0",
       "files": [
         ".nupkg.metadata",
         "lib/net472/Assembly-CSharp-firstpass.dll",
@@ -924,21 +924,21 @@
         "lib/netstandard2.0/Unity.TextMeshPro.dll",
         "lib/netstandard2.0/Unity.Timeline.dll",
         "lib/netstandard2.0/UnityEngine.UI.dll",
-        "subnautica.gamelibs.71288.0.0-r.0.nupkg.sha512",
+        "subnautica.gamelibs.82304.0.0-r.0.nupkg.sha512",
         "subnautica.gamelibs.nuspec"
       ]
     },
-    "Subnautica.Nautilus/1.0.0-pre.34": {
-      "sha512": "wzisqezkiR2nrGg9X9VWdnD7HqFja5x7ov7fRJ9XJqsWLkMtRqBenDYmVSs5FDz+TDkLPZTckZAQQ4noB1ANcA==",
+    "Subnautica.Nautilus/1.0.0-pre.42": {
+      "sha512": "6jkypLL9LYzdKSRkyuZ40nisSMcxaoNzqBZEE9sSv7Dsr5pvwYDe8srO6M5aa3o5dWvU6hxJhaearNOYoRVeIg==",
       "type": "package",
-      "path": "subnautica.nautilus/1.0.0-pre.34",
+      "path": "subnautica.nautilus/1.0.0-pre.42",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net472/Nautilus.dll",
         "lib/net472/Nautilus.xml",
         "logo.png",
-        "subnautica.nautilus.1.0.0-pre.34.nupkg.sha512",
+        "subnautica.nautilus.1.0.0-pre.42.nupkg.sha512",
         "subnautica.nautilus.nuspec"
       ]
     },
@@ -1135,14 +1135,14 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "BepInEx.Analyzers >= 1.*",
+      "BepInEx.Analyzers >= 1.0.8",
       "BepInEx.Core >= 5.4.21",
       "BepInEx.PluginInfoProps >= 1.1.0",
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.2",
       "Newtonsoft.Json >= 13.0.3",
       "PolySharp >= 1.13.1",
-      "Subnautica.GameLibs >= 71288.0.0-r.0",
-      "Subnautica.Nautilus >= 1.*-*",
+      "Subnautica.GameLibs >= 82304.0.0-r.0",
+      "Subnautica.Nautilus >= 1.0.0-pre.42",
       "UnityEngine.Modules >= 2019.4.36"
     ]
   },
@@ -1173,7 +1173,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://api.nuget.org/v3/index.json": {},
         "https://nuget.bepinex.dev/v3/index.json": {}
       },
       "frameworks": {
@@ -1192,16 +1191,15 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net472": {
         "targetAlias": "net472",
         "dependencies": {
           "BepInEx.Analyzers": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "[1.*, )"
+            "version": "[1.0.8, )"
           },
           "BepInEx.Core": {
             "target": "Package",
@@ -1226,12 +1224,11 @@
           },
           "Subnautica.GameLibs": {
             "target": "Package",
-            "version": "[71288.0.0-r.0, )"
+            "version": "[82304.0.0-r.0, )"
           },
           "Subnautica.Nautilus": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "[1.*-*, )"
+            "version": "[1.0.0-pre.42, )"
           },
           "UnityEngine.Modules": {
             "include": "Compile",
@@ -1239,7 +1236,7 @@
             "version": "[2019.4.36, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

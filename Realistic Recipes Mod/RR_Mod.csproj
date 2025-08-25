@@ -1,32 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	
   <PropertyGroup>
-	<TargetFramework>net472</TargetFramework>
     <AssemblyName>RealisticRecipesMod</AssemblyName>
     <Version>1.0.0</Version>
 	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	<LangVersion>11</LangVersion>
+	<TargetFramework>net472</TargetFramework>
 	  
 	<RootNamespace>RRM</RootNamespace>
-		
-	<RestoreAdditionalProjectSources>
-	  https://api.nuget.org/v3/index.json;
-	  https://nuget.bepinex.dev/v3/index.json;
-	</RestoreAdditionalProjectSources>
 
 	<StartAction>Program</StartAction>
 	<StartProgram>C:\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica.exe</StartProgram>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.1.0" />
+	<PackageReference Include="BepInEx.Analyzers" Version="1.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Subnautica.GameLibs" Version="82304.0.0-r.0" />
+    <PackageReference Include="Subnautica.Nautilus" Version="1.0.0-pre.42" />
     <PackageReference Include="UnityEngine.Modules" Version="2019.4.36" IncludeAssets="compile" />
-    <PackageReference Include="Subnautica.GameLibs" Version="71288.0.0-r.0" />
     <PackageReference Include="PolySharp" Version="1.13.1" />
-    <PackageReference Include="Subnautica.Nautilus" Version="1.*-*" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
@@ -89,8 +84,7 @@
 	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll')">$(PathBepInExFallback)</HintPath>
 	</Reference>
 	<Reference Include="Nautilus">
-	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll')">$(PathNautilus)</HintPath>
-	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll')">$(PathNautilusFallback)</HintPath>
+	  <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEngine">
 	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll')">$(PathUnityEngine)</HintPath>
@@ -101,8 +95,7 @@
 	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll')">$(PathUnityEngineCoreModuleFallback)</HintPath>
 	</Reference>
 	<Reference Include="UnityEngine.UI">
-	  <HintPath Condition="Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll')">$(PathUnityEngineUI)</HintPath>
-	  <HintPath Condition="!Exists('E:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll')">$(PathUnityEngineUIFallback)</HintPath>
+	  <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UI.dll</HintPath>
 	</Reference>
   </ItemGroup>
 

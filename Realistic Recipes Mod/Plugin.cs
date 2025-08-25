@@ -5,9 +5,10 @@ using HarmonyLib;
 using Nautilus.Handlers;
 using Nautilus.Json;
 
-using RRM.SaveFileManager;
-using RRM.UI_files;
+using RRM.SFM;
+using RRM.UI;
 using RRM.LoggerLines;
+using Nautilus.Utility;
 
 namespace RRM
 {
@@ -22,7 +23,6 @@ namespace RRM
         public new static ManualLogSource Logger { get; private set; }
         private static Assembly Assembly { get; } = Assembly.GetExecutingAssembly();
         internal static SaveData saveData;
-        static int getSavedDifficulty;
 
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Delete unused private members", Justification = "<Waiting>")]
@@ -38,42 +38,35 @@ namespace RRM
 
             saveData = SaveDataHandler.RegisterSaveDataCache<SaveData>();
 
-            // resets the cached saved difficulty so it can be used again
-            saveData.OnStartedLoading += (object sender, JsonFileEventArgs e) =>
-            {
-                SaveData data = e.Instance as SaveData;
-                data.SavedDifficulty = default;
-                Logger.LogWarning($"[RESETTING] 'SavedDifficulty' resetted value: {data.SavedDifficulty}");
-            };
-
-            if (!uGUI_DifficultyPanel.isDifficultyButtonPressed)
-            {
-                // loads mod data from the file it has been saved to
-                saveData.OnFinishedLoading += (object sender, JsonFileEventArgs e) =>
-                {
-                    SaveData data = e.Instance as SaveData;
-                    getSavedDifficulty = data.SavedDifficulty;
-                    Logger.LogWarning($"[LOADING] 'SavedDifficulty' saved value: {data.SavedDifficulty}");
-                    Logger.LogWarning($"[LOADING] 'getSavedDifficulty' retrieved value: {getSavedDifficulty}");
-
-                    SFM.LoadModdedFiles(getSavedDifficulty);
-
-                    //uGUI_DifficultyPanel.difficultyIndex = default;
-                    //Logger.LogWarning($"[LOADING] 'difficultyIndex' var set to: {uGUI_DifficultyPanel.difficultyIndex}");
-                    //Logger.LogWarning("[LOADING] Saved game successfully loaded with modded files!");
-                };
-            }
-
-
             // saves mod data to corresponding game save slot under "..\RealisticRecipesMod\RRM_SavedDifficulty.json"
             saveData.OnStartedSaving += (object sender, JsonFileEventArgs e) =>
             {
+                if (uGUI_DifficultyPanel.difficultyIndex != default) // if player has selected a difficulty other than 'vanilla' (since 0 = default)
+                {
+                    SaveData data = e.Instance as SaveData;
+                    data.SavedDifficulty = uGUI_DifficultyPanel.difficultyIndex; // save the difficulty index
+                    uGUI_DifficultyPanel.wasLastDiffIndexSaved = true; // ...to indicate that the index from player's last game was saved (only if it's other than 0 though)
+                }
+                else
+                {
+                    uGUI_DifficultyPanel.wasLastDiffIndexSaved = false; // if player selected 'vanilla' difficulty, there's no point in saving the index since it is already equal to 0 by default
+                }
+            };
+                        
+            // loads mod data from the file it has been saved to
+            saveData.OnFinishedLoading += (object sender, JsonFileEventArgs e) =>
+            {
                 SaveData data = e.Instance as SaveData;
-                data.SavedDifficulty = uGUI_DifficultyPanel.difficultyIndex;
-                Logger.LogWarning($"[SAVING] SavedDifficulty value being saved: {data.SavedDifficulty}");
-
-                //uGUI_DifficultyPanel.difficultyIndex = default;
-                //Logger.LogWarning($"[SAVING] 'difficultyIndex' var set to: {uGUI_DifficultyPanel.difficultyIndex}");
+                if (data.SavedDifficulty == -1) //literally checks (by extension) if the file fuckin exists
+                {
+                    Logger.LogInfo($"Loading modded recipes for the first time with index value: {uGUI_DifficultyPanel.difficultyIndex}");
+                    SaveFileManager.LoadModdedFiles(uGUI_DifficultyPanel.difficultyIndex);
+                }
+                else
+                {
+                    Logger.LogInfo($"Loading recipes with saved value: {data.SavedDifficulty}, and index value (for reference): {uGUI_DifficultyPanel.difficultyIndex}");
+                    SaveFileManager.LoadModdedFiles(data.SavedDifficulty);
+                }
             };
         }
     }

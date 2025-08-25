@@ -13,10 +13,10 @@
 //using UWE;
 //using Nautilus.Json;
 //using RRM;
-//using RRM.SaveFileManager;
+//using RRM.SFM;
 //using Sentry;
 
-//namespace RRM.UI_files
+//namespace RRM.UI
 //{
 //    [HarmonyPatch(typeof(IngameMenu))]
 //    internal class uGUI_SaveButton
