@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj": {}
+    "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\KraftonIsAlterra\\KraftonIsAlterra.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj": {
+    "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\KraftonIsAlterra\\KraftonIsAlterra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
+        "projectUniqueName": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
         "projectName": "KraftonIsAlterra",
-        "projectPath": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
+        "projectPath": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
         "packagesPath": "C:\\Users\\jaket\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\obj\\",
+        "outputPath": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\KraftonIsAlterra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

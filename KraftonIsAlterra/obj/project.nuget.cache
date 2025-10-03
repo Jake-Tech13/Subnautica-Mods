@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8IQJnm9FMd0=",
+  "dgSpecHash": "LtiAMc7Qpx4=",
   "success": true,
-  "projectFilePath": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
+  "projectFilePath": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaket\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",

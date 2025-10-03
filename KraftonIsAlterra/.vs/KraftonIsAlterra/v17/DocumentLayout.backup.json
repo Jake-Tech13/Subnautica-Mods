@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|c:\\dev\\mods\\subnautica\\kraftonisalterra\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|c:\\dev\\mods\\subnautica\\kraftonisalterra\\patches\\pdalogpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|solutionrelative:patches\\pdalogpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|c:\\dev\\mods\\subnautica\\kraftonisalterra\\replacers\\customaudioreplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|solutionrelative:replacers\\customaudioreplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|c:\\dev\\mods\\subnautica\\kraftonisalterra\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|solutionrelative:plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B87E1EFF-9243-11A9-2D1A-0F51829E620C}|KraftonIsAlterra.csproj|c:\\dev\\mods\\subnautica\\kraftonisalterra\\kraftonisalterra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -30,12 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "KraftonIsAlterra",
+              "Title": "KraftonIsAlterra.csproj",
               "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
               "RelativeDocumentMoniker": "KraftonIsAlterra.csproj",
               "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\KraftonIsAlterra.csproj",
@@ -43,12 +43,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-03T16:04:40.862Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Plugin.cs",
               "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Plugin.cs",
               "RelativeDocumentMoniker": "Plugin.cs",
@@ -58,45 +57,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T16:04:35.459Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EndCreditsPatch.cs",
-              "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\EndCreditsPatch.cs",
-              "RelativeDocumentMoniker": "Patches\\EndCreditsPatch.cs",
-              "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\EndCreditsPatch.cs",
-              "RelativeToolTip": "Patches\\EndCreditsPatch.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T16:05:10.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PDALogPatch.cs",
-              "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\PDALogPatch.cs",
-              "RelativeDocumentMoniker": "Patches\\PDALogPatch.cs",
-              "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\PDALogPatch.cs",
-              "RelativeToolTip": "Patches\\PDALogPatch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T16:08:10.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomAudioReplacer.cs",
-              "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Replacers\\CustomAudioReplacer.cs",
-              "RelativeDocumentMoniker": "Replacers\\CustomAudioReplacer.cs",
-              "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Replacers\\CustomAudioReplacer.cs",
-              "RelativeToolTip": "Replacers\\CustomAudioReplacer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T16:08:09.829Z",
               "EditorCaption": ""
             },
             {
@@ -110,6 +70,43 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EndCreditsPatch.cs",
+              "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\EndCreditsPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\EndCreditsPatch.cs",
+              "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\EndCreditsPatch.cs",
+              "RelativeToolTip": "Patches\\EndCreditsPatch.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T16:05:10.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PDALogPatch.cs",
+              "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\PDALogPatch.cs",
+              "RelativeDocumentMoniker": "Patches\\PDALogPatch.cs",
+              "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Patches\\PDALogPatch.cs",
+              "RelativeToolTip": "Patches\\PDALogPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T16:08:10.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomAudioReplacer.cs",
+              "DocumentMoniker": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Replacers\\CustomAudioReplacer.cs",
+              "RelativeDocumentMoniker": "Replacers\\CustomAudioReplacer.cs",
+              "ToolTip": "C:\\Dev\\Mods\\Subnautica\\KraftonIsAlterra\\Replacers\\CustomAudioReplacer.cs",
+              "RelativeToolTip": "Replacers\\CustomAudioReplacer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T16:08:09.829Z"
             },
             {
               "$type": "Bookmark",

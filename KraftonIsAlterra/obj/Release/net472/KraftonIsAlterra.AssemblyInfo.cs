@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KraftonIsAlterra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efd625088fdf04890f4274e461345d7bd3542e45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+275e96e885c143eb2e837719c91ff9da39eebf7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("KraftonIsAlterra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KraftonIsAlterra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
