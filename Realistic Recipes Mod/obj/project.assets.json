@@ -1153,11 +1153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
+      "projectUniqueName": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
       "projectName": "RealisticRecipesMod",
-      "projectPath": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
+      "projectPath": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
       "packagesPath": "C:\\Users\\jaket\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\obj\\",
+      "outputPath": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\Realistic Recipes Mod\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1236,7 +1236,7 @@
             "version": "[2019.4.36, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

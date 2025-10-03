@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M9D746V325s=",
+  "dgSpecHash": "WuwNvNrABFQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jaket\\Documents\\GitHub\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
+  "projectFilePath": "C:\\Dev\\GitHubRepository\\Subnautica-Mods\\Realistic Recipes Mod\\RR_Mod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaket\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\jaket\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
